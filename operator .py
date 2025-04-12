@@ -1,65 +1,51 @@
-{% extends 'quiz/base.html' %}
+import streamlit as st
+import folium
+from folium.plugins import MarkerCluster
+from streamlit_folium import folium_static
+import pandas as pd
 
-{% block content %}
-<div class="row">
-    <div class="col-md-8 offset-md-2">
-        <div id="mcqCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                {% for mcq in mcqs %}
-                <div class="carousel-item {% if forloop.first %}active{% endif %}">
-                    <div class="slide">
-                        <h2 class="mb-4">Question {{ forloop.counter }}</h2>
-                        <p class="lead">{{ mcq.question }}</p>
-                        
-                        <div class="options">
-                            <div class="option" onclick="checkAnswer(this, '{{ mcq.correct_answer }}')">
-                                a) {{ mcq.option_a }}
-                            </div>
-                            <div class="option" onclick="checkAnswer(this, '{{ mcq.correct_answer }}')">
-                                b) {{ mcq.option_b }}
-                            </div>
-                            <div class="option" onclick="checkAnswer(this, '{{ mcq.correct_answer }}')">
-                                c) {{ mcq.option_c }}
-                            </div>
-                            <div class="option" onclick="checkAnswer(this, '{{ mcq.correct_answer }}')">
-                                d) {{ mcq.option_d }}
-                            </div>
-                        </div>
+# Data for top wheat-producing states
+wheat_data = [
+    ["Uttar Pradesh", 26.8467, 80.9462, 30.0],
+    ["Punjab", 31.1471, 75.3412, 18.5],
+    ["Haryana", 29.0588, 76.0856, 12.0],
+    ["Madhya Pradesh", 23.2599, 77.4126, 11.0],
+    ["Rajasthan", 26.9124, 75.7873, 9.0]
+]
 
-                        <div class="explanation mt-4" style="display: none;">
-                            <h5>Explanation:</h5>
-                            <p>{{ mcq.explanation }}</p>
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-            
-            <button class="carousel-control-prev" type="button" data-bs-target="#mcqCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#mcqCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-</div>
+# Convert to DataFrame
+df = pd.DataFrame(wheat_data, columns=["State", "Latitude", "Longitude", "Production (MT)"])
 
-<script>
-function checkAnswer(element, correctAnswer) {
-    const options = element.parentElement.querySelectorAll('.option');
-    const explanation = element.parentElement.nextElementSibling;
-    
-    // Remove correct class from all options
-    options.forEach(opt => opt.classList.remove('correct'));
-    
-    // Add correct class to the selected option
-    element.classList.add('correct');
-    
-    // Show explanation
-    explanation.style.display = 'block';
-}
-</script>
-{% endblock %} 
+# ---------------- STREAMLIT UI ----------------
+st.set_page_config(layout="wide", page_title="India Wheat Production Dashboard")
+
+st.title("🌾 India Wheat Production Dashboard")
+st.markdown("This dashboard displays the top 5 wheat-producing states in India with production data and geolocation.")
+
+# Summary stats
+total_production = df["Production (MT)"].sum()
+top_state = df.loc[df["Production (MT)"].idxmax(), "State"]
+
+st.subheader("🔢 Summary")
+col1, col2 = st.columns(2)
+col1.metric("Total Wheat Production", f"{total_production} million tons")
+col2.metric("Top Producing State", top_state)
+
+# Show data table
+st.subheader("📋 Data Table")
+st.dataframe(df, use_container_width=True)
+
+# Map
+st.subheader("🗺️ Cluster Map of Top Wheat-Producing States")
+wheat_map = folium.Map(location=[23.0, 79.0], zoom_start=5, tiles="CartoDB positron")
+marker_cluster = MarkerCluster().add_to(wheat_map)
+
+for state, lat, lon, production in wheat_data:
+    folium.Marker(
+        location=[lat, lon],
+        popup=folium.Popup(f"<b>{state}</b><br>Production: {production} MT", max_width=250),
+        tooltip=state,
+        icon=folium.Icon(color="green", icon="leaf")
+    ).add_to(marker_cluster)
+
+folium_static(wheat_map)
