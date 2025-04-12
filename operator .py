@@ -1,51 +1,72 @@
-import streamlit as st
-import folium
-from folium.plugins import MarkerCluster
-from streamlit_folium import folium_static
-import pandas as pd
+from pptx import Presentation
+from pptx.util import Inches, Pt
+from pptx.enum.shapes import MSO_SHAPE
+from pptx.dml.color import RGBColor
+from pptx.enum.text import PP_ALIGN
 
-# Data for top wheat-producing states
-wheat_data = [
-    ["Uttar Pradesh", 26.8467, 80.9462, 30.0],
-    ["Punjab", 31.1471, 75.3412, 18.5],
-    ["Haryana", 29.0588, 76.0856, 12.0],
-    ["Madhya Pradesh", 23.2599, 77.4126, 11.0],
-    ["Rajasthan", 26.9124, 75.7873, 9.0]
-]
+# Create presentation and blank slide
+prs = Presentation()
+slide_layout = prs.slide_layouts[6]
+slide = prs.slides.add_slide(slide_layout)
 
-# Convert to DataFrame
-df = pd.DataFrame(wheat_data, columns=["State", "Latitude", "Longitude", "Production (MT)"])
+# Steps and emojis as placeholders
+steps = ["Acquire", "Understand", "Doubt", "Transform", "Analyze", "Present"]
+icons = ["📥", "🎓", "❓", "⚙️", "🧠", "📊"]
 
-# ---------------- STREAMLIT UI ----------------
-st.set_page_config(layout="wide", page_title="India Wheat Production Dashboard")
+# Style constants
+circle_diameter = Inches(1.3)
+spacing = Inches(0.7)
+start_x = Inches(0.5)
+y_position = Inches(2)
 
-st.title("🌾 India Wheat Production Dashboard")
-st.markdown("This dashboard displays the top 5 wheat-producing states in India with production data and geolocation.")
+# Helper function for text formatting
+def format_textbox(shape, text, font_size=14, bold=True, color=RGBColor(255, 255, 255)):
+    text_frame = shape.text_frame
+    text_frame.clear()
+    p = text_frame.paragraphs[0]
+    p.alignment = PP_ALIGN.CENTER
+    run = p.add_run()
+    run.text = text
+    font = run.font
+    font.size = Pt(font_size)
+    font.bold = bold
+    font.color.rgb = color
 
-# Summary stats
-total_production = df["Production (MT)"].sum()
-top_state = df.loc[df["Production (MT)"].idxmax(), "State"]
+# Function to add shadow to the shapes
+def add_shadow(shape):
+    shadow = shape.shadow
+    shadow.inherit = False
+    shadow.blur_radius = Inches(0.15)
+    shadow.distance = Inches(0.2)
+    shadow.angle = 45
+    shadow.fore_color.rgb = RGBColor(0, 0, 0)  # Black shadow
 
-st.subheader("🔢 Summary")
-col1, col2 = st.columns(2)
-col1.metric("Total Wheat Production", f"{total_production} million tons")
-col2.metric("Top Producing State", top_state)
+# Add each step
+for i, (step, icon) in enumerate(zip(steps, icons)):
+    left = start_x + i * (circle_diameter + spacing)
+    circle = slide.shapes.add_shape(MSO_SHAPE.OVAL, left, y_position, circle_diameter, circle_diameter)
+    
+    # Apply solid color fill and shadow to simulate 3D effect
+    circle.fill.solid()
+    circle.fill.fore_color.rgb = RGBColor(91, 155, 213)  # Blue color for circle
+    circle.line.color.rgb = RGBColor(255, 255, 255)  # White border
+    circle.line.width = Pt(2)
 
-# Show data table
-st.subheader("📋 Data Table")
-st.dataframe(df, use_container_width=True)
+    add_shadow(circle)  # Add shadow to circle
 
-# Map
-st.subheader("🗺️ Cluster Map of Top Wheat-Producing States")
-wheat_map = folium.Map(location=[23.0, 79.0], zoom_start=5, tiles="CartoDB positron")
-marker_cluster = MarkerCluster().add_to(wheat_map)
+    icon_box = slide.shapes.add_textbox(left, y_position - Inches(0.6), circle_diameter, Inches(0.5))
+    format_textbox(icon_box, icon, font_size=28, bold=False)
 
-for state, lat, lon, production in wheat_data:
-    folium.Marker(
-        location=[lat, lon],
-        popup=folium.Popup(f"<b>{state}</b><br>Production: {production} MT", max_width=250),
-        tooltip=state,
-        icon=folium.Icon(color="green", icon="leaf")
-    ).add_to(marker_cluster)
+    label_box = slide.shapes.add_textbox(left, y_position + circle_diameter, circle_diameter, Inches(0.5))
+    format_textbox(label_box, step, font_size=12, bold=True, color=RGBColor(0, 0, 0))
 
-folium_static(wheat_map)
+# Add arrow with shadow
+arrow = slide.shapes.add_shape(MSO_SHAPE.RIGHT_ARROW, Inches(0.3), Inches(4), Inches(9), Inches(0.4))
+arrow.fill.solid()
+arrow.fill.fore_color.rgb = RGBColor(0, 112, 192)  # Blue color for arrow
+arrow.line.color.rgb = RGBColor(255, 255, 255)  # White border
+
+add_shadow(arrow)  # Add shadow to arrow
+
+# Save to specified path
+prs.save(r"D:\indiannn\lovely\process_flow_slide.pptx")

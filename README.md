@@ -1,67 +1,88 @@
-# Critical Thinking Framework Presentation
+# Employee Analytics Dashboard
 
-An interactive web-based presentation built with Reveal.js that outlines a comprehensive critical thinking framework for decision-making and problem-solving.
+This is an interactive dashboard built with Streamlit that provides comprehensive analytics for employee data. The dashboard includes various visualizations and interactive features similar to Power BI.
 
-## 🌐 Live Demo
+## Features
 
-You can view the presentation directly in your browser:
-1. Go to the GitHub Pages link: `[Your GitHub Pages URL after deployment]`
-2. Or open `presentation.html` locally in your web browser
+- Interactive filters for Region, Gender, and Age
+- Five main sections:
+  1. Demographics
+  2. Compensation
+  3. Tenure
+  4. Geographic
+  5. Performance
+- Download options for each visualization
+- Responsive design
+- Interactive charts and graphs
 
-## 🎯 Features
+## Live Demo
 
-- Interactive slide navigation
-- Responsive design for all devices
-- Professional styling and animations
-- 6 core question framework (Who, What, Where, When, Why, How)
-- Practical implementation guidelines
-- Benefits analysis
-- Next steps roadmap
+You can access the live dashboard at: [Your Streamlit Cloud URL]
 
-## 🚀 Quick Start
+## Installation
 
-### View Locally
-1. Clone this repository:
+1. Clone this repository
+2. Install the required packages:
 ```bash
-git clone [your-repo-url]
-cd [repo-name]
+pip install -r requirements.txt
 ```
 
-2. Open `presentation.html` in your web browser
+## Running Locally
 
-### Navigation Controls
-- **Arrow keys**: Navigate between slides
-- **Space**: Next slide
-- **ESC**: Overview mode
-- **F**: Fullscreen
-- **?**: Show all keyboard shortcuts
+1. Make sure your CSV file is in the same directory as `index.py`
+2. Run the application:
+```bash
+streamlit run index.py
+```
+3. Open your web browser and navigate to `http://localhost:8501`
 
-## 🛠️ Technical Details
+## Deployment
 
-Built using:
-- HTML5
-- CSS3
-- [Reveal.js](https://revealjs.com/) v4.5.0
-- Modern web standards
+To deploy this dashboard to Streamlit Cloud:
 
-## 📱 Compatibility
+1. Create a Streamlit Cloud account at https://streamlit.io/cloud
+2. Get your Streamlit Cloud token
+3. Add the token to your GitHub repository secrets as `STREAMLIT_TOKEN`
+4. Push your code to GitHub
+5. The GitHub Action will automatically deploy your app to Streamlit Cloud
 
-Works on all modern browsers:
-- Chrome
-- Firefox
-- Safari
-- Edge
-- Mobile browsers
+## Using the Dashboard
 
-## 📄 License
+1. Use the filters in the sidebar to select specific regions, genders, or age ranges
+2. Navigate between different tabs to view different types of analytics
+3. Hover over charts to see detailed information
+4. Click the download buttons to export data for each visualization
+5. Use the "Download All Data" button in the sidebar to export the complete dataset
 
-MIT License - feel free to use and modify for your needs.
+## Data Requirements
 
-## 📞 Contact
+The dashboard expects a CSV file with the following columns:
+- Emp ID
+- Gender
+- Age in Yrs.
+- Region
+- Salary
+- Date of Joining
+- State
+- City
+- Last % Hike
 
-For questions or support, please contact:
-[Your contact information]
+## Customization
 
-## 🤝 Contributing
+You can customize the dashboard by:
+1. Modifying the color schemes in the visualizations
+2. Adding new filters or visualizations
+3. Changing the layout of the dashboard
+4. Adding new data processing steps
 
-Contributions are welcome! Please feel free to submit a Pull Request. 
+## Troubleshooting
+
+If you encounter any issues:
+1. Make sure all required packages are installed
+2. Check that your CSV file is properly formatted
+3. Verify that all required columns are present in your data
+4. Check the console for any error messages
+
+## Support
+
+For any questions or issues, please open an issue in the GitHub repository. 
