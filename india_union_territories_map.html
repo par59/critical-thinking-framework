@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9636dbcc31857a79617d5c83691f9a5e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9636dbcc31857a79617d5c83691f9a5e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9636dbcc31857a79617d5c83691f9a5e = L.map(
+                "map_9636dbcc31857a79617d5c83691f9a5e",
+                {
+                    center: [20.5937, 78.9629],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_af14fb4ec9df110e9cb1c5de3cb101f5 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_af14fb4ec9df110e9cb1c5de3cb101f5.addTo(map_9636dbcc31857a79617d5c83691f9a5e);
+        
+    
+            var marker_d2156f8957f14f21548d696446585e45 = L.marker(
+                [11.7401, 92.6586],
+                {
+}
+            ).addTo(map_9636dbcc31857a79617d5c83691f9a5e);
+        
+    
+            var icon_c0fc544354ad3000d2c778580a2ec446 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_28c6ae27b1ef91f150aa8deb091e1d33 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_23ef5fbbddc61785bddf93f83bf597bd = $(`<div id="html_23ef5fbbddc61785bddf93f83bf597bd" style="width: 100.0%; height: 100.0%;"><b>Andaman and Nicobar Islands</b><br>Capital: Port Blair<br>A group of over 500 islands located in the Bay of Bengal.</div>`)[0];
+                popup_28c6ae27b1ef91f150aa8deb091e1d33.setContent(html_23ef5fbbddc61785bddf93f83bf597bd);
+            
+        
+
+        marker_d2156f8957f14f21548d696446585e45.bindPopup(popup_28c6ae27b1ef91f150aa8deb091e1d33)
+        ;
+
+        
+    
+    
+                marker_d2156f8957f14f21548d696446585e45.setIcon(icon_c0fc544354ad3000d2c778580a2ec446);
+            
+    
+            var marker_139fa7212d3793347bbf1928452445cd = L.marker(
+                [30.7333, 76.7794],
+                {
+}
+            ).addTo(map_9636dbcc31857a79617d5c83691f9a5e);
+        
+    
+            var icon_88274afb0d3c5470b276820d1423e6e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fc079f6ac4ca6c22dbbeaf1e4e5f5c67 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_96c048f039dbef5377af5a52a49b7bd5 = $(`<div id="html_96c048f039dbef5377af5a52a49b7bd5" style="width: 100.0%; height: 100.0%;"><b>Chandigarh</b><br>Capital: Chandigarh<br>A Union Territory and the capital of Haryana and Punjab.</div>`)[0];
+                popup_fc079f6ac4ca6c22dbbeaf1e4e5f5c67.setContent(html_96c048f039dbef5377af5a52a49b7bd5);
+            
+        
+
+        marker_139fa7212d3793347bbf1928452445cd.bindPopup(popup_fc079f6ac4ca6c22dbbeaf1e4e5f5c67)
+        ;
+
+        
+    
+    
+                marker_139fa7212d3793347bbf1928452445cd.setIcon(icon_88274afb0d3c5470b276820d1423e6e8);
+            
+    
+            var marker_7629c5974dbc23515f74eda669a83610 = L.marker(
+                [20.3974, 72.8323],
+                {
+}
+            ).addTo(map_9636dbcc31857a79617d5c83691f9a5e);
+        
+    
+            var icon_90de560dc6f06fe9e66fe3daad716b45 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_42f7ef96e73812a1cecf656e2d8fc30d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f0e5489f8522c5d00188383d5039f8cb = $(`<div id="html_f0e5489f8522c5d00188383d5039f8cb" style="width: 100.0%; height: 100.0%;"><b>Dadra and Nagar Haveli and Daman and Diu</b><br>Capital: Daman<br>A coastal Union Territory formed by merging Dadra and Nagar Haveli with Daman and Diu.</div>`)[0];
+                popup_42f7ef96e73812a1cecf656e2d8fc30d.setContent(html_f0e5489f8522c5d00188383d5039f8cb);
+            
+        
+
+        marker_7629c5974dbc23515f74eda669a83610.bindPopup(popup_42f7ef96e73812a1cecf656e2d8fc30d)
+        ;
+
+        
+    
+    
+                marker_7629c5974dbc23515f74eda669a83610.setIcon(icon_90de560dc6f06fe9e66fe3daad716b45);
+            
+    
+            var marker_826de9b909891a743e84e5e4ad7baafd = L.marker(
+                [10.5625, 72.6326],
+                {
+}
+            ).addTo(map_9636dbcc31857a79617d5c83691f9a5e);
+        
+    
+            var icon_435e9283e160d14ea490f1c3e27f476b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_107c3c0e11b0b26f04ea57000a3d8063 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_49dbfeda23f6e5c54aa8e5872f3c6580 = $(`<div id="html_49dbfeda23f6e5c54aa8e5872f3c6580" style="width: 100.0%; height: 100.0%;"><b>Lakshadweep</b><br>Capital: Kavaratti<br>A group of islands in the Arabian Sea, off the southwestern coast of India.</div>`)[0];
+                popup_107c3c0e11b0b26f04ea57000a3d8063.setContent(html_49dbfeda23f6e5c54aa8e5872f3c6580);
+            
+        
+
+        marker_826de9b909891a743e84e5e4ad7baafd.bindPopup(popup_107c3c0e11b0b26f04ea57000a3d8063)
+        ;
+
+        
+    
+    
+                marker_826de9b909891a743e84e5e4ad7baafd.setIcon(icon_435e9283e160d14ea490f1c3e27f476b);
+            
+    
+            var marker_9d2ed3f391c526229e2c87d7f17fea86 = L.marker(
+                [28.6139, 77.209],
+                {
+}
+            ).addTo(map_9636dbcc31857a79617d5c83691f9a5e);
+        
+    
+            var icon_3c0361bb1409ddc97de36d6f85ec871c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e863eebe821c5624b0f20f85c1cd1c06 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5491b27a820ddb3203f737adce24d320 = $(`<div id="html_5491b27a820ddb3203f737adce24d320" style="width: 100.0%; height: 100.0%;"><b>Delhi</b><br>Capital: New Delhi<br>The capital city of India and the seat of the Indian government.</div>`)[0];
+                popup_e863eebe821c5624b0f20f85c1cd1c06.setContent(html_5491b27a820ddb3203f737adce24d320);
+            
+        
+
+        marker_9d2ed3f391c526229e2c87d7f17fea86.bindPopup(popup_e863eebe821c5624b0f20f85c1cd1c06)
+        ;
+
+        
+    
+    
+                marker_9d2ed3f391c526229e2c87d7f17fea86.setIcon(icon_3c0361bb1409ddc97de36d6f85ec871c);
+            
+    
+            var marker_be62ca75610c42df036ffe126e678716 = L.marker(
+                [11.9416, 79.8083],
+                {
+}
+            ).addTo(map_9636dbcc31857a79617d5c83691f9a5e);
+        
+    
+            var icon_fb0c5bf9e4fe9fe34d2db45b25b4302a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0e5da0ac5752da8fa6dfca15e1496e07 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f8b7456eaaa529d78c9ba4a2bda52135 = $(`<div id="html_f8b7456eaaa529d78c9ba4a2bda52135" style="width: 100.0%; height: 100.0%;"><b>Puducherry</b><br>Capital: Puducherry<br>A coastal Union Territory with a French colonial heritage.</div>`)[0];
+                popup_0e5da0ac5752da8fa6dfca15e1496e07.setContent(html_f8b7456eaaa529d78c9ba4a2bda52135);
+            
+        
+
+        marker_be62ca75610c42df036ffe126e678716.bindPopup(popup_0e5da0ac5752da8fa6dfca15e1496e07)
+        ;
+
+        
+    
+    
+                marker_be62ca75610c42df036ffe126e678716.setIcon(icon_fb0c5bf9e4fe9fe34d2db45b25b4302a);
+            
+    
+            var marker_b416c6220e44f87f137ea98009957e58 = L.marker(
+                [34.1526, 77.577],
+                {
+}
+            ).addTo(map_9636dbcc31857a79617d5c83691f9a5e);
+        
+    
+            var icon_1c079f9001e040cd6fb7273ed8f90812 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4b05b2ed8fbbb6b5fdb0bfa3cb72ccd4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7d42fbaa5deebf616a60a40211318224 = $(`<div id="html_7d42fbaa5deebf616a60a40211318224" style="width: 100.0%; height: 100.0%;"><b>Ladakh</b><br>Capital: Leh<br>A northernmost region bordered by China and Pakistan, comprising the Leh and Kargil districts.</div>`)[0];
+                popup_4b05b2ed8fbbb6b5fdb0bfa3cb72ccd4.setContent(html_7d42fbaa5deebf616a60a40211318224);
+            
+        
+
+        marker_b416c6220e44f87f137ea98009957e58.bindPopup(popup_4b05b2ed8fbbb6b5fdb0bfa3cb72ccd4)
+        ;
+
+        
+    
+    
+                marker_b416c6220e44f87f137ea98009957e58.setIcon(icon_1c079f9001e040cd6fb7273ed8f90812);
+            
+    
+            var marker_9fa6caef3d8bb7220d7c6b881423d81e = L.marker(
+                [33.7782, 76.5762],
+                {
+}
+            ).addTo(map_9636dbcc31857a79617d5c83691f9a5e);
+        
+    
+            var icon_89daa396e62486c77ada1491bfc96f46 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dd90bf9cdce3d3885f25d7bd19a6a54b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c3862c18481299b829069e238b352422 = $(`<div id="html_c3862c18481299b829069e238b352422" style="width: 100.0%; height: 100.0%;"><b>Jammu & Kashmir</b><br>Capital: Srinagar (summer), Jammu (winter)<br>A disputed region, now a Union Territory, with Srinagar as the summer capital and Jammu as the winter capital.</div>`)[0];
+                popup_dd90bf9cdce3d3885f25d7bd19a6a54b.setContent(html_c3862c18481299b829069e238b352422);
+            
+        
+
+        marker_9fa6caef3d8bb7220d7c6b881423d81e.bindPopup(popup_dd90bf9cdce3d3885f25d7bd19a6a54b)
+        ;
+
+        
+    
+    
+                marker_9fa6caef3d8bb7220d7c6b881423d81e.setIcon(icon_89daa396e62486c77ada1491bfc96f46);
+            
+</script>
+</html>

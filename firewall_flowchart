@@ -1,0 +1,28 @@
+digraph "Firewall Flowchart" {
+	size=10
+	Start [label=Start]
+	Request [label="Incoming/Outgoing Request?"]
+	Check_IP [label="Check Source & Destination IP"]
+	Check_Port [label="Check Port Number"]
+	Check_Protocol [label="Check Protocol Type (TCP/UDP/ICMP)"]
+	DPI [label="Deep Packet Inspection (DPI)"]
+	Security [label="Apply Security Policies & Rules"]
+	Monitor [label="Monitor & Log Traffic"]
+	End [label=End]
+	Drop [label="Drop Packet & Log" fillcolor=red shape=box style=filled]
+	Allow [label="Forward Packet" fillcolor=green shape=box style=filled]
+	Start -> Request
+	Request -> Check_IP
+	Check_IP -> Drop [label=No]
+	Check_IP -> Check_Port [label=Yes]
+	Check_Port -> Drop [label=No]
+	Check_Port -> Check_Protocol [label=Yes]
+	Check_Protocol -> Drop [label=No]
+	Check_Protocol -> DPI [label=Yes]
+	DPI -> Drop [label=Suspicious]
+	DPI -> Security [label=Clean]
+	Security -> Drop [label="Non-compliant"]
+	Security -> Allow [label=Compliant]
+	Allow -> Monitor
+	Monitor -> End
+}

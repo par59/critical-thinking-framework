@@ -1,0 +1,25 @@
+// Project Completion Flowchart
+digraph {
+	A [label=Start shape=oval]
+	B [label="Set Project Deadline" shape=box]
+	C [label="Check Progress" shape=box]
+	D [label="Is Project Completed?" shape=diamond]
+	E [label="Deliver Project On Time" shape=box]
+	F [label="Identify Delay Reasons" shape=box]
+	G [label="Implement Corrective Actions" shape=box]
+	H [label="Adjust Timeline" shape=box]
+	I [label="Re-evaluate Progress" shape=box]
+	J [label="Deliver Project (Late)" shape=box]
+	Z [label=End shape=oval]
+	A -> B
+	B -> C
+	C -> D
+	D -> E [label=Yes]
+	D -> F [label=No]
+	F -> G
+	G -> H
+	H -> I
+	I -> D
+	E -> Z
+	J -> Z
+}

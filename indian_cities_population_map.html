@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bebdcf36baf6cad9b09bd8e4aab67e3c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bebdcf36baf6cad9b09bd8e4aab67e3c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bebdcf36baf6cad9b09bd8e4aab67e3c = L.map(
+                "map_bebdcf36baf6cad9b09bd8e4aab67e3c",
+                {
+                    center: [21.0, 78.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0133c5f26640b5cbf189616447454e01 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0133c5f26640b5cbf189616447454e01.addTo(map_bebdcf36baf6cad9b09bd8e4aab67e3c);
+        
+    
+            var circle_marker_b920a402191bc9f569a6ec47e6445a04 = L.circleMarker(
+                [28.6139, 77.209],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 31.8, "stroke": true, "weight": 3}
+            ).addTo(map_bebdcf36baf6cad9b09bd8e4aab67e3c);
+        
+    
+        var popup_287e1486ec13a062b877ff58be7c04c7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_59a995122c34d1f27b293adeaa792a7f = $(`<div id="html_59a995122c34d1f27b293adeaa792a7f" style="width: 100.0%; height: 100.0%;">Delhi: 31,800,000 people</div>`)[0];
+                popup_287e1486ec13a062b877ff58be7c04c7.setContent(html_59a995122c34d1f27b293adeaa792a7f);
+            
+        
+
+        circle_marker_b920a402191bc9f569a6ec47e6445a04.bindPopup(popup_287e1486ec13a062b877ff58be7c04c7)
+        ;
+
+        
+    
+    
+            var circle_marker_37da9b6264dd500526bb295ff5106fd2 = L.circleMarker(
+                [19.076, 72.8777],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.4, "stroke": true, "weight": 3}
+            ).addTo(map_bebdcf36baf6cad9b09bd8e4aab67e3c);
+        
+    
+        var popup_307021656fbbc968afc9c24a21452b31 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8693f9512b359cfe510cedd42ca4b129 = $(`<div id="html_8693f9512b359cfe510cedd42ca4b129" style="width: 100.0%; height: 100.0%;">Mumbai: 20,400,000 people</div>`)[0];
+                popup_307021656fbbc968afc9c24a21452b31.setContent(html_8693f9512b359cfe510cedd42ca4b129);
+            
+        
+
+        circle_marker_37da9b6264dd500526bb295ff5106fd2.bindPopup(popup_307021656fbbc968afc9c24a21452b31)
+        ;
+
+        
+    
+    
+            var circle_marker_a03d69f0ce7508535be257c5c10ede49 = L.circleMarker(
+                [22.5726, 88.3639],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.0, "stroke": true, "weight": 3}
+            ).addTo(map_bebdcf36baf6cad9b09bd8e4aab67e3c);
+        
+    
+        var popup_dd50b57ea09537fc5504a2124b4efb8f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b7093f69c175489aeb8d820d1bef4f2 = $(`<div id="html_5b7093f69c175489aeb8d820d1bef4f2" style="width: 100.0%; height: 100.0%;">Kolkata: 15,000,000 people</div>`)[0];
+                popup_dd50b57ea09537fc5504a2124b4efb8f.setContent(html_5b7093f69c175489aeb8d820d1bef4f2);
+            
+        
+
+        circle_marker_a03d69f0ce7508535be257c5c10ede49.bindPopup(popup_dd50b57ea09537fc5504a2124b4efb8f)
+        ;
+
+        
+    
+    
+            var circle_marker_e68814901e0658a26446fb249f7eb0bb = L.circleMarker(
+                [13.0827, 80.2707],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.3, "stroke": true, "weight": 3}
+            ).addTo(map_bebdcf36baf6cad9b09bd8e4aab67e3c);
+        
+    
+        var popup_44edda3c7df22a931612f45094c80dae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d5151999759f166d7b73c3c4e3569a43 = $(`<div id="html_d5151999759f166d7b73c3c4e3569a43" style="width: 100.0%; height: 100.0%;">Chennai: 11,300,000 people</div>`)[0];
+                popup_44edda3c7df22a931612f45094c80dae.setContent(html_d5151999759f166d7b73c3c4e3569a43);
+            
+        
+
+        circle_marker_e68814901e0658a26446fb249f7eb0bb.bindPopup(popup_44edda3c7df22a931612f45094c80dae)
+        ;
+
+        
+    
+</script>
+</html>

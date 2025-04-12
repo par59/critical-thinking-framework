@@ -1,0 +1,47 @@
+// Cyber Security Process Flow
+digraph CyberSecurityFlowchart {
+	rankdir=TB size="8,5"
+	node [fillcolor=lightblue shape=box style=filled]
+	edge [color=gray50]
+	Start [label="Start Security Process"]
+	RiskAssessment [label="Risk Assessment"]
+	Prevention [label="Prevention Measures"]
+	Detection [label="Threat Detection"]
+	Response [label="Incident Response"]
+	Recovery [label="Recovery & Analysis"]
+	End [label="End Process"]
+	AccessControl [label="Access Control"]
+	Encryption [label="Data Encryption"]
+	Firewall [label="Firewall Configuration"]
+	Training [label="Security Training"]
+	Monitoring [label="Continuous Monitoring"]
+	IDS [label="Intrusion Detection"]
+	LogAnalysis [label="Log Analysis"]
+	Containment [label="Incident Containment"]
+	Investigation [label="Forensic Investigation"]
+	Notification [label="Stakeholder Notification"]
+	Restore [label="System Restoration"]
+	Review [label="Security Review"]
+	Update [label="Policy Updates"]
+	Start -> RiskAssessment
+	RiskAssessment -> Prevention
+	Prevention -> Detection
+	Detection -> Response
+	Response -> Recovery
+	Recovery -> End
+	Prevention -> AccessControl
+	Prevention -> Encryption
+	Prevention -> Firewall
+	Prevention -> Training
+	Detection -> Monitoring
+	Detection -> IDS
+	Detection -> LogAnalysis
+	Response -> Containment
+	Response -> Investigation
+	Response -> Notification
+	Recovery -> Restore
+	Recovery -> Review
+	Recovery -> Update
+	Review -> RiskAssessment [label="Feedback Loop"]
+	Update -> Prevention [label="Policy Updates"]
+}

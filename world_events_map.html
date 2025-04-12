@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_148bab6eebbd1167292f4ee9cbfdbc4c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_148bab6eebbd1167292f4ee9cbfdbc4c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_148bab6eebbd1167292f4ee9cbfdbc4c = L.map(
+                "map_148bab6eebbd1167292f4ee9cbfdbc4c",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f7cb599d0343688197910efec68fd320 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f7cb599d0343688197910efec68fd320.addTo(map_148bab6eebbd1167292f4ee9cbfdbc4c);
+        
+    
+            var marker_a7e3663ba117240064eae24282203c6b = L.marker(
+                [22.95, 88.25],
+                {
+}
+            ).addTo(map_148bab6eebbd1167292f4ee9cbfdbc4c);
+        
+    
+            var icon_995cd5eeae0f451b70013122860c3abe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_95e22e1381b27949f596d841e3e2cd77 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_02c5593f972fe61b3b1e839c5a0bb1ff = $(`<div id="html_02c5593f972fe61b3b1e839c5a0bb1ff" style="width: 100.0%; height: 100.0%;"><b>Battle of Plassey (1757)</b><br>Decisive battle in India that led to British control.</div>`)[0];
+                popup_95e22e1381b27949f596d841e3e2cd77.setContent(html_02c5593f972fe61b3b1e839c5a0bb1ff);
+            
+        
+
+        marker_a7e3663ba117240064eae24282203c6b.bindPopup(popup_95e22e1381b27949f596d841e3e2cd77)
+        ;
+
+        
+    
+    
+                marker_a7e3663ba117240064eae24282203c6b.setIcon(icon_995cd5eeae0f451b70013122860c3abe);
+            
+    
+            var marker_4ca2277ab6353512722a86b829d96776 = L.marker(
+                [39.9, -75.17],
+                {
+}
+            ).addTo(map_148bab6eebbd1167292f4ee9cbfdbc4c);
+        
+    
+            var icon_ed4480a3bab7e94120586264b11e4378 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3bdb8d1f57e6a842ffdeb6a900dbe310 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3f56d214bb88ed820d048f6e3375b43e = $(`<div id="html_3f56d214bb88ed820d048f6e3375b43e" style="width: 100.0%; height: 100.0%;"><b>American Declaration of Independence (1776)</b><br>Thirteen colonies declared independence from Great Britain.</div>`)[0];
+                popup_3bdb8d1f57e6a842ffdeb6a900dbe310.setContent(html_3f56d214bb88ed820d048f6e3375b43e);
+            
+        
+
+        marker_4ca2277ab6353512722a86b829d96776.bindPopup(popup_3bdb8d1f57e6a842ffdeb6a900dbe310)
+        ;
+
+        
+    
+    
+                marker_4ca2277ab6353512722a86b829d96776.setIcon(icon_ed4480a3bab7e94120586264b11e4378);
+            
+    
+            var marker_6cedeb23538662242ab5b83174728664 = L.marker(
+                [48.85, 2.35],
+                {
+}
+            ).addTo(map_148bab6eebbd1167292f4ee9cbfdbc4c);
+        
+    
+            var icon_c89122455eeb3081526b96a9598a6662 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0a559d76cbf3f96d5e9064a7c836e3ae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8cb77b6ea6d7fcffbedd238c101644df = $(`<div id="html_8cb77b6ea6d7fcffbedd238c101644df" style="width: 100.0%; height: 100.0%;"><b>French Revolution Begins (1789)</b><br>The storming of the Bastille marked the start.</div>`)[0];
+                popup_0a559d76cbf3f96d5e9064a7c836e3ae.setContent(html_8cb77b6ea6d7fcffbedd238c101644df);
+            
+        
+
+        marker_6cedeb23538662242ab5b83174728664.bindPopup(popup_0a559d76cbf3f96d5e9064a7c836e3ae)
+        ;
+
+        
+    
+    
+                marker_6cedeb23538662242ab5b83174728664.setIcon(icon_c89122455eeb3081526b96a9598a6662);
+            
+    
+            var marker_5f6e075afe61f1a40229c12d2e1610aa = L.marker(
+                [48.8566, 2.3522],
+                {
+}
+            ).addTo(map_148bab6eebbd1167292f4ee9cbfdbc4c);
+        
+    
+            var icon_f670c8872582a07f356cbd32e7e402ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2f7e4a8bfbc712fb271c0a81aaa373ed = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cbe35e1d5b21be7df3909c3c3acd19ce = $(`<div id="html_cbe35e1d5b21be7df3909c3c3acd19ce" style="width: 100.0%; height: 100.0%;"><b>Napoleon becomes Emperor of France (1804)</b><br>Napoleon Bonaparte crowned himself emperor.</div>`)[0];
+                popup_2f7e4a8bfbc712fb271c0a81aaa373ed.setContent(html_cbe35e1d5b21be7df3909c3c3acd19ce);
+            
+        
+
+        marker_5f6e075afe61f1a40229c12d2e1610aa.bindPopup(popup_2f7e4a8bfbc712fb271c0a81aaa373ed)
+        ;
+
+        
+    
+    
+                marker_5f6e075afe61f1a40229c12d2e1610aa.setIcon(icon_f670c8872582a07f356cbd32e7e402ef);
+            
+    
+            var marker_ad1805efc9a9f474f1cfb5df1c183996 = L.marker(
+                [15.96, -5.79],
+                {
+}
+            ).addTo(map_148bab6eebbd1167292f4ee9cbfdbc4c);
+        
+    
+            var icon_cd0a5a843145366e6d124f79bbb66fc4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6eb1d0b95844fdf80d9ac1eecc15ea38 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e0d658eb2b7137235603d9eb013e276c = $(`<div id="html_e0d658eb2b7137235603d9eb013e276c" style="width: 100.0%; height: 100.0%;"><b>Death of Napoleon (1821)</b><br>Napoleon died in exile on the island of Saint Helena.</div>`)[0];
+                popup_6eb1d0b95844fdf80d9ac1eecc15ea38.setContent(html_e0d658eb2b7137235603d9eb013e276c);
+            
+        
+
+        marker_ad1805efc9a9f474f1cfb5df1c183996.bindPopup(popup_6eb1d0b95844fdf80d9ac1eecc15ea38)
+        ;
+
+        
+    
+    
+                marker_ad1805efc9a9f474f1cfb5df1c183996.setIcon(icon_cd0a5a843145366e6d124f79bbb66fc4);
+            
+    
+            var marker_9aa7c7343cd4782954d972a27a341cf8 = L.marker(
+                [28.61, 77.23],
+                {
+}
+            ).addTo(map_148bab6eebbd1167292f4ee9cbfdbc4c);
+        
+    
+            var icon_befdab1807844c5bca02328e1f4e0d05 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ef52aa757a5e050f0b93674a433832ae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5e3467f0a335fa9e7316f971efd0145a = $(`<div id="html_5e3467f0a335fa9e7316f971efd0145a" style="width: 100.0%; height: 100.0%;"><b>Indian Rebellion (First War of Independence) (1857)</b><br>Rebellion against British rule in India.</div>`)[0];
+                popup_ef52aa757a5e050f0b93674a433832ae.setContent(html_5e3467f0a335fa9e7316f971efd0145a);
+            
+        
+
+        marker_9aa7c7343cd4782954d972a27a341cf8.bindPopup(popup_ef52aa757a5e050f0b93674a433832ae)
+        ;
+
+        
+    
+    
+                marker_9aa7c7343cd4782954d972a27a341cf8.setIcon(icon_befdab1807844c5bca02328e1f4e0d05);
+            
+    
+            var marker_9d059c384b6dbcc8da6d5169fdac1fea = L.marker(
+                [38.8977, -77.0365],
+                {
+}
+            ).addTo(map_148bab6eebbd1167292f4ee9cbfdbc4c);
+        
+    
+            var icon_25a0a6e9cc909f8ce70557ab9c667a0c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6f70a9acad584e3450a9af296ff239c2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bc343250048ffacf74f009a35c8cfde7 = $(`<div id="html_bc343250048ffacf74f009a35c8cfde7" style="width: 100.0%; height: 100.0%;"><b>Start of American Civil War (1861)</b><br>Conflict over slavery and states’ rights.</div>`)[0];
+                popup_6f70a9acad584e3450a9af296ff239c2.setContent(html_bc343250048ffacf74f009a35c8cfde7);
+            
+        
+
+        marker_9d059c384b6dbcc8da6d5169fdac1fea.bindPopup(popup_6f70a9acad584e3450a9af296ff239c2)
+        ;
+
+        
+    
+    
+                marker_9d059c384b6dbcc8da6d5169fdac1fea.setIcon(icon_25a0a6e9cc909f8ce70557ab9c667a0c);
+            
+    
+            var marker_ec6985b3896ab828b363516bc5e5574c = L.marker(
+                [38.8977, -77.0365],
+                {
+}
+            ).addTo(map_148bab6eebbd1167292f4ee9cbfdbc4c);
+        
+    
+            var icon_02e5ada73a2b90db01ea77351c3b7ab7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_925eacd09a78e5cd1c2f4f4eede998e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ed4bf312b699fe74d44d00eb50accbac = $(`<div id="html_ed4bf312b699fe74d44d00eb50accbac" style="width: 100.0%; height: 100.0%;"><b>End of American Civil War (1865)</b><br>Union victory and abolition of slavery.</div>`)[0];
+                popup_925eacd09a78e5cd1c2f4f4eede998e0.setContent(html_ed4bf312b699fe74d44d00eb50accbac);
+            
+        
+
+        marker_ec6985b3896ab828b363516bc5e5574c.bindPopup(popup_925eacd09a78e5cd1c2f4f4eede998e0)
+        ;
+
+        
+    
+    
+                marker_ec6985b3896ab828b363516bc5e5574c.setIcon(icon_02e5ada73a2b90db01ea77351c3b7ab7);
+            
+    
+            var marker_89acbb7c4aaaaef93d753f5960b998ae = L.marker(
+                [37.9838, 23.7275],
+                {
+}
+            ).addTo(map_148bab6eebbd1167292f4ee9cbfdbc4c);
+        
+    
+            var icon_b1927ed9f62e5c4c50afc966a3cb9dc7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7fc55080ca129743adf4718ac2807ebd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_276ad747afc8e5d60204738991069572 = $(`<div id="html_276ad747afc8e5d60204738991069572" style="width: 100.0%; height: 100.0%;"><b>First Modern Olympic Games (1896)</b><br>Modern Olympic Games were held in Athens, Greece.</div>`)[0];
+                popup_7fc55080ca129743adf4718ac2807ebd.setContent(html_276ad747afc8e5d60204738991069572);
+            
+        
+
+        marker_89acbb7c4aaaaef93d753f5960b998ae.bindPopup(popup_7fc55080ca129743adf4718ac2807ebd)
+        ;
+
+        
+    
+    
+                marker_89acbb7c4aaaaef93d753f5960b998ae.setIcon(icon_b1927ed9f62e5c4c50afc966a3cb9dc7);
+            
+    
+            var marker_2094c9c69a838a747e443ff32c8c1b7b = L.marker(
+                [47.4979, 19.0402],
+                {
+}
+            ).addTo(map_148bab6eebbd1167292f4ee9cbfdbc4c);
+        
+    
+            var icon_c36c4348e8e501c05d7aaf43367a2509 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a3de57852456d0cad1d790ffa7a2a5d1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_17d3531b53755b143e6e2bd756a90d75 = $(`<div id="html_17d3531b53755b143e6e2bd756a90d75" style="width: 100.0%; height: 100.0%;"><b>Start of World War I (1914)</b><br>Triggered by the assassination of Archduke Franz Ferdinand.</div>`)[0];
+                popup_a3de57852456d0cad1d790ffa7a2a5d1.setContent(html_17d3531b53755b143e6e2bd756a90d75);
+            
+        
+
+        marker_2094c9c69a838a747e443ff32c8c1b7b.bindPopup(popup_a3de57852456d0cad1d790ffa7a2a5d1)
+        ;
+
+        
+    
+    
+                marker_2094c9c69a838a747e443ff32c8c1b7b.setIcon(icon_c36c4348e8e501c05d7aaf43367a2509);
+            
+    
+            var marker_6deafa39f40f0e4ba6a77601cb16827f = L.marker(
+                [55.7558, 37.6173],
+                {
+}
+            ).addTo(map_148bab6eebbd1167292f4ee9cbfdbc4c);
+        
+    
+            var icon_c0ca649220e81799fd10f5e8ddbf0a66 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f70fe5424be61c6e56189ec9ed081fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_635ce94993d0c94895c178f7ef5be357 = $(`<div id="html_635ce94993d0c94895c178f7ef5be357" style="width: 100.0%; height: 100.0%;"><b>Russian Revolution (1917)</b><br>The Bolshevik revolution led to the rise of the Soviet Union.</div>`)[0];
+                popup_3f70fe5424be61c6e56189ec9ed081fb.setContent(html_635ce94993d0c94895c178f7ef5be357);
+            
+        
+
+        marker_6deafa39f40f0e4ba6a77601cb16827f.bindPopup(popup_3f70fe5424be61c6e56189ec9ed081fb)
+        ;
+
+        
+    
+    
+                marker_6deafa39f40f0e4ba6a77601cb16827f.setIcon(icon_c0ca649220e81799fd10f5e8ddbf0a66);
+            
+    
+            var marker_6b16f3398d20596f0a9deb4eb7f49bcf = L.marker(
+                [28.6139, 77.209],
+                {
+}
+            ).addTo(map_148bab6eebbd1167292f4ee9cbfdbc4c);
+        
+    
+            var icon_338bd08ab7388af8d3b59cfea9a41932 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5f7a1951df81c3e332d0a36f150fdaa6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2de22efef6f68ecd9b8d9579f61a8a51 = $(`<div id="html_2de22efef6f68ecd9b8d9579f61a8a51" style="width: 100.0%; height: 100.0%;"><b>India Gains Independence (1947)</b><br>End of British rule and partition of India.</div>`)[0];
+                popup_5f7a1951df81c3e332d0a36f150fdaa6.setContent(html_2de22efef6f68ecd9b8d9579f61a8a51);
+            
+        
+
+        marker_6b16f3398d20596f0a9deb4eb7f49bcf.bindPopup(popup_5f7a1951df81c3e332d0a36f150fdaa6)
+        ;
+
+        
+    
+    
+                marker_6b16f3398d20596f0a9deb4eb7f49bcf.setIcon(icon_338bd08ab7388af8d3b59cfea9a41932);
+            
+    
+            var marker_a111a660f8d586a3762fbc9a4051198f = L.marker(
+                [28.5721, -80.648],
+                {
+}
+            ).addTo(map_148bab6eebbd1167292f4ee9cbfdbc4c);
+        
+    
+            var icon_800b55607fc8c3fc8faebbadd4ef2481 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_65e9d213db66355a3543144ec7e3e24c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f27ac337b77ce88a0f5e3c64c07b75a = $(`<div id="html_2f27ac337b77ce88a0f5e3c64c07b75a" style="width: 100.0%; height: 100.0%;"><b>Apollo 11 Moon Landing (1969)</b><br>Neil Armstrong became the first human to walk on the Moon.</div>`)[0];
+                popup_65e9d213db66355a3543144ec7e3e24c.setContent(html_2f27ac337b77ce88a0f5e3c64c07b75a);
+            
+        
+
+        marker_a111a660f8d586a3762fbc9a4051198f.bindPopup(popup_65e9d213db66355a3543144ec7e3e24c)
+        ;
+
+        
+    
+    
+                marker_a111a660f8d586a3762fbc9a4051198f.setIcon(icon_800b55607fc8c3fc8faebbadd4ef2481);
+            
+    
+            var marker_c92c4bc43fa4b94e1299247a7c89de13 = L.marker(
+                [52.52, 13.405],
+                {
+}
+            ).addTo(map_148bab6eebbd1167292f4ee9cbfdbc4c);
+        
+    
+            var icon_574a7928f1589d2c09d2fa8fe2db3ded = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8cf82dbd761dc94b7bb93f36f623cc43 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cf5790b2a42bcd5b425b58cf74dea891 = $(`<div id="html_cf5790b2a42bcd5b425b58cf74dea891" style="width: 100.0%; height: 100.0%;"><b>Fall of Berlin Wall (1989)</b><br>The barrier between East and West Germany was torn down.</div>`)[0];
+                popup_8cf82dbd761dc94b7bb93f36f623cc43.setContent(html_cf5790b2a42bcd5b425b58cf74dea891);
+            
+        
+
+        marker_c92c4bc43fa4b94e1299247a7c89de13.bindPopup(popup_8cf82dbd761dc94b7bb93f36f623cc43)
+        ;
+
+        
+    
+    
+                marker_c92c4bc43fa4b94e1299247a7c89de13.setIcon(icon_574a7928f1589d2c09d2fa8fe2db3ded);
+            
+    
+            var marker_b18e102742b44dbe0f2b11710eb5d703 = L.marker(
+                [40.7128, -74.006],
+                {
+}
+            ).addTo(map_148bab6eebbd1167292f4ee9cbfdbc4c);
+        
+    
+            var icon_9df8113fe1394d5f8209d855ea203047 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2fbefc106e8c1b8375eefba9ff4cb5ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a04f6ed746b7471d726482b3e3418589 = $(`<div id="html_a04f6ed746b7471d726482b3e3418589" style="width: 100.0%; height: 100.0%;"><b>9/11 Attacks (2001)</b><br>Terrorist attacks on the World Trade Center and the Pentagon.</div>`)[0];
+                popup_2fbefc106e8c1b8375eefba9ff4cb5ef.setContent(html_a04f6ed746b7471d726482b3e3418589);
+            
+        
+
+        marker_b18e102742b44dbe0f2b11710eb5d703.bindPopup(popup_2fbefc106e8c1b8375eefba9ff4cb5ef)
+        ;
+
+        
+    
+    
+                marker_b18e102742b44dbe0f2b11710eb5d703.setIcon(icon_9df8113fe1394d5f8209d855ea203047);
+            
+    
+            var marker_fe7fd2b41b99f2602dbd079636cde844 = L.marker(
+                [30.3753, 69.3451],
+                {
+}
+            ).addTo(map_148bab6eebbd1167292f4ee9cbfdbc4c);
+        
+    
+            var icon_10afbc889fe5240509e783ba5d1d0fb6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ae7a9d471593366655ac484a33a78fe0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_52278155d35c2c0b2eaba04812107b2d = $(`<div id="html_52278155d35c2c0b2eaba04812107b2d" style="width: 100.0%; height: 100.0%;"><b>COVID-19 Pandemic Begins (2020)</b><br>The global spread of COVID-19 caused worldwide lockdowns.</div>`)[0];
+                popup_ae7a9d471593366655ac484a33a78fe0.setContent(html_52278155d35c2c0b2eaba04812107b2d);
+            
+        
+
+        marker_fe7fd2b41b99f2602dbd079636cde844.bindPopup(popup_ae7a9d471593366655ac484a33a78fe0)
+        ;
+
+        
+    
+    
+                marker_fe7fd2b41b99f2602dbd079636cde844.setIcon(icon_10afbc889fe5240509e783ba5d1d0fb6);
+            
+</script>
+</html>

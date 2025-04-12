@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3df267293f321c4e9b1270d34ff1e13f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 90.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3df267293f321c4e9b1270d34ff1e13f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3df267293f321c4e9b1270d34ff1e13f = L.map(
+                "map_3df267293f321c4e9b1270d34ff1e13f",
+                {
+                    center: [22.5, 78.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5.2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_80683f374e363465a2031e92fa798c92 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_80683f374e363465a2031e92fa798c92.addTo(map_3df267293f321c4e9b1270d34ff1e13f);
+        
+    
+            var marker_cluster_fa68762c052b125f3d0a1a52bc126191 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_697a679085e6e0c6d565734aaa0ca1f8 = L.marker(
+                [20.888, 70.4012],
+                {
+}
+            ).addTo(marker_cluster_fa68762c052b125f3d0a1a52bc126191);
+        
+    
+            var icon_abe4091ee35e999a15e93c209cada274 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "glyphicon-map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b8438de2b8d9035124058dabb57c4f9a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6f45560e912eff476014ce028c95f451 = $(`<div id="html_6f45560e912eff476014ce028c95f451" style="width: 100.0%; height: 100.0%;">     <div style="font-family:'Segoe UI'; font-size:14px">         <b>Somnath</b><br>Veraval, Gujarat     </div>     </div>`)[0];
+                popup_b8438de2b8d9035124058dabb57c4f9a.setContent(html_6f45560e912eff476014ce028c95f451);
+            
+        
+
+        marker_697a679085e6e0c6d565734aaa0ca1f8.bindPopup(popup_b8438de2b8d9035124058dabb57c4f9a)
+        ;
+
+        
+    
+    
+            marker_697a679085e6e0c6d565734aaa0ca1f8.bindTooltip(
+                `<div>
+                     Somnath (Veraval, Gujarat)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_697a679085e6e0c6d565734aaa0ca1f8.setIcon(icon_abe4091ee35e999a15e93c209cada274);
+            
+    
+            var marker_79c59e5b0fa7f6cfc227176c78afb263 = L.marker(
+                [16.5745, 78.9461],
+                {
+}
+            ).addTo(marker_cluster_fa68762c052b125f3d0a1a52bc126191);
+        
+    
+            var icon_789e748c4967306d8241b69b1eebed6c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "glyphicon-map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6bc23924d96219a8c17558abbb7e9815 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_613647978720b7ba8c60b155e2f38089 = $(`<div id="html_613647978720b7ba8c60b155e2f38089" style="width: 100.0%; height: 100.0%;">     <div style="font-family:'Segoe UI'; font-size:14px">         <b>Mallikarjuna</b><br>Srisailam, Andhra Pradesh     </div>     </div>`)[0];
+                popup_6bc23924d96219a8c17558abbb7e9815.setContent(html_613647978720b7ba8c60b155e2f38089);
+            
+        
+
+        marker_79c59e5b0fa7f6cfc227176c78afb263.bindPopup(popup_6bc23924d96219a8c17558abbb7e9815)
+        ;
+
+        
+    
+    
+            marker_79c59e5b0fa7f6cfc227176c78afb263.bindTooltip(
+                `<div>
+                     Mallikarjuna (Srisailam, Andhra Pradesh)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_79c59e5b0fa7f6cfc227176c78afb263.setIcon(icon_789e748c4967306d8241b69b1eebed6c);
+            
+    
+            var marker_72b13abe63e3d8479aca89b302ae4c9a = L.marker(
+                [23.1765, 75.7864],
+                {
+}
+            ).addTo(marker_cluster_fa68762c052b125f3d0a1a52bc126191);
+        
+    
+            var icon_60a600c17c1c3023effc5ece42bdaaf8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "glyphicon-map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f1c81a99881bfd5ce7aebbb178aec617 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8aee3688886e203f73585b8abc011d4d = $(`<div id="html_8aee3688886e203f73585b8abc011d4d" style="width: 100.0%; height: 100.0%;">     <div style="font-family:'Segoe UI'; font-size:14px">         <b>Mahakaleshwar</b><br>Ujjain, Madhya Pradesh     </div>     </div>`)[0];
+                popup_f1c81a99881bfd5ce7aebbb178aec617.setContent(html_8aee3688886e203f73585b8abc011d4d);
+            
+        
+
+        marker_72b13abe63e3d8479aca89b302ae4c9a.bindPopup(popup_f1c81a99881bfd5ce7aebbb178aec617)
+        ;
+
+        
+    
+    
+            marker_72b13abe63e3d8479aca89b302ae4c9a.bindTooltip(
+                `<div>
+                     Mahakaleshwar (Ujjain, Madhya Pradesh)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_72b13abe63e3d8479aca89b302ae4c9a.setIcon(icon_60a600c17c1c3023effc5ece42bdaaf8);
+            
+    
+            var marker_e1b40338296a9bdca6a77357e5e8c505 = L.marker(
+                [22.2426, 76.1511],
+                {
+}
+            ).addTo(marker_cluster_fa68762c052b125f3d0a1a52bc126191);
+        
+    
+            var icon_5eb5995f4e314796760aad4cd455e7ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "glyphicon-map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a5499c76586c80af2071855b6407e288 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ac3203d8d3318c953bb375b05cf83a5b = $(`<div id="html_ac3203d8d3318c953bb375b05cf83a5b" style="width: 100.0%; height: 100.0%;">     <div style="font-family:'Segoe UI'; font-size:14px">         <b>Omkareshwar</b><br>Khandwa, Madhya Pradesh     </div>     </div>`)[0];
+                popup_a5499c76586c80af2071855b6407e288.setContent(html_ac3203d8d3318c953bb375b05cf83a5b);
+            
+        
+
+        marker_e1b40338296a9bdca6a77357e5e8c505.bindPopup(popup_a5499c76586c80af2071855b6407e288)
+        ;
+
+        
+    
+    
+            marker_e1b40338296a9bdca6a77357e5e8c505.bindTooltip(
+                `<div>
+                     Omkareshwar (Khandwa, Madhya Pradesh)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e1b40338296a9bdca6a77357e5e8c505.setIcon(icon_5eb5995f4e314796760aad4cd455e7ef);
+            
+    
+            var marker_5652bb64fdc97d1c7b568bb8c8b63441 = L.marker(
+                [30.7346, 79.0669],
+                {
+}
+            ).addTo(marker_cluster_fa68762c052b125f3d0a1a52bc126191);
+        
+    
+            var icon_6e4da134e66ea980c1c08a6ce476ec40 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "glyphicon-map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_32f7a799b5288d2f75540877c7aa883b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_40452a0ca0be7d00fed6061502e6d95e = $(`<div id="html_40452a0ca0be7d00fed6061502e6d95e" style="width: 100.0%; height: 100.0%;">     <div style="font-family:'Segoe UI'; font-size:14px">         <b>Kedarnath</b><br>Rudraprayag, Uttarakhand     </div>     </div>`)[0];
+                popup_32f7a799b5288d2f75540877c7aa883b.setContent(html_40452a0ca0be7d00fed6061502e6d95e);
+            
+        
+
+        marker_5652bb64fdc97d1c7b568bb8c8b63441.bindPopup(popup_32f7a799b5288d2f75540877c7aa883b)
+        ;
+
+        
+    
+    
+            marker_5652bb64fdc97d1c7b568bb8c8b63441.bindTooltip(
+                `<div>
+                     Kedarnath (Rudraprayag, Uttarakhand)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5652bb64fdc97d1c7b568bb8c8b63441.setIcon(icon_6e4da134e66ea980c1c08a6ce476ec40);
+            
+    
+            var marker_150d5339d73349a1826334d92b5a9d2f = L.marker(
+                [19.071, 73.5538],
+                {
+}
+            ).addTo(marker_cluster_fa68762c052b125f3d0a1a52bc126191);
+        
+    
+            var icon_fdd0394a28631b9e468dd972576872e1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "glyphicon-map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f7877ac251e69b08aac91e6ea435a41b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7a2529575dce7b1380444946ee9762dc = $(`<div id="html_7a2529575dce7b1380444946ee9762dc" style="width: 100.0%; height: 100.0%;">     <div style="font-family:'Segoe UI'; font-size:14px">         <b>Bhimashankar</b><br>Pune, Maharashtra     </div>     </div>`)[0];
+                popup_f7877ac251e69b08aac91e6ea435a41b.setContent(html_7a2529575dce7b1380444946ee9762dc);
+            
+        
+
+        marker_150d5339d73349a1826334d92b5a9d2f.bindPopup(popup_f7877ac251e69b08aac91e6ea435a41b)
+        ;
+
+        
+    
+    
+            marker_150d5339d73349a1826334d92b5a9d2f.bindTooltip(
+                `<div>
+                     Bhimashankar (Pune, Maharashtra)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_150d5339d73349a1826334d92b5a9d2f.setIcon(icon_fdd0394a28631b9e468dd972576872e1);
+            
+    
+            var marker_5095c59d6cd08358878164b3136d97c8 = L.marker(
+                [25.3109, 83.0106],
+                {
+}
+            ).addTo(marker_cluster_fa68762c052b125f3d0a1a52bc126191);
+        
+    
+            var icon_d3a8ed667514541a2aaa4462be91a47c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "glyphicon-map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_023b9273d17e25acb7349c5905fb08e8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2b33de5aaf1cacbd94f5d702e86c7848 = $(`<div id="html_2b33de5aaf1cacbd94f5d702e86c7848" style="width: 100.0%; height: 100.0%;">     <div style="font-family:'Segoe UI'; font-size:14px">         <b>Kashi Vishwanath</b><br>Varanasi, Uttar Pradesh     </div>     </div>`)[0];
+                popup_023b9273d17e25acb7349c5905fb08e8.setContent(html_2b33de5aaf1cacbd94f5d702e86c7848);
+            
+        
+
+        marker_5095c59d6cd08358878164b3136d97c8.bindPopup(popup_023b9273d17e25acb7349c5905fb08e8)
+        ;
+
+        
+    
+    
+            marker_5095c59d6cd08358878164b3136d97c8.bindTooltip(
+                `<div>
+                     Kashi Vishwanath (Varanasi, Uttar Pradesh)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5095c59d6cd08358878164b3136d97c8.setIcon(icon_d3a8ed667514541a2aaa4462be91a47c);
+            
+    
+            var marker_960de57a0eb80b3ae3c9d874f79cbe7c = L.marker(
+                [19.9406, 73.5302],
+                {
+}
+            ).addTo(marker_cluster_fa68762c052b125f3d0a1a52bc126191);
+        
+    
+            var icon_1e30e78b42b3138cae2c9caba9104d2e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "glyphicon-map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_699dbf7411a420ae12dfca666d76ba30 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cf6b8039e4d6ad85014b4304ba33a5d2 = $(`<div id="html_cf6b8039e4d6ad85014b4304ba33a5d2" style="width: 100.0%; height: 100.0%;">     <div style="font-family:'Segoe UI'; font-size:14px">         <b>Trimbakeshwar</b><br>Nashik, Maharashtra     </div>     </div>`)[0];
+                popup_699dbf7411a420ae12dfca666d76ba30.setContent(html_cf6b8039e4d6ad85014b4304ba33a5d2);
+            
+        
+
+        marker_960de57a0eb80b3ae3c9d874f79cbe7c.bindPopup(popup_699dbf7411a420ae12dfca666d76ba30)
+        ;
+
+        
+    
+    
+            marker_960de57a0eb80b3ae3c9d874f79cbe7c.bindTooltip(
+                `<div>
+                     Trimbakeshwar (Nashik, Maharashtra)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_960de57a0eb80b3ae3c9d874f79cbe7c.setIcon(icon_1e30e78b42b3138cae2c9caba9104d2e);
+            
+    
+            var marker_fc2321baa4102d4b3c4221aa5e4c3970 = L.marker(
+                [24.4551, 86.6974],
+                {
+}
+            ).addTo(marker_cluster_fa68762c052b125f3d0a1a52bc126191);
+        
+    
+            var icon_64341bb63deaaa0bf24cd81ca9ee6e5a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "glyphicon-map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_96a449da1c48e55481d950f05f892d72 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_29dd023d75ea4ef5272133e31f14d5db = $(`<div id="html_29dd023d75ea4ef5272133e31f14d5db" style="width: 100.0%; height: 100.0%;">     <div style="font-family:'Segoe UI'; font-size:14px">         <b>Vaidyanath</b><br>Deoghar, Jharkhand     </div>     </div>`)[0];
+                popup_96a449da1c48e55481d950f05f892d72.setContent(html_29dd023d75ea4ef5272133e31f14d5db);
+            
+        
+
+        marker_fc2321baa4102d4b3c4221aa5e4c3970.bindPopup(popup_96a449da1c48e55481d950f05f892d72)
+        ;
+
+        
+    
+    
+            marker_fc2321baa4102d4b3c4221aa5e4c3970.bindTooltip(
+                `<div>
+                     Vaidyanath (Deoghar, Jharkhand)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fc2321baa4102d4b3c4221aa5e4c3970.setIcon(icon_64341bb63deaaa0bf24cd81ca9ee6e5a);
+            
+    
+            var marker_0a40e2e1da128d2db0ab95562456f2e0 = L.marker(
+                [22.241, 69.0995],
+                {
+}
+            ).addTo(marker_cluster_fa68762c052b125f3d0a1a52bc126191);
+        
+    
+            var icon_3e026409df41f20a39ad863393dfbb94 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "glyphicon-map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_23f80e03163516586036bcd3322340d5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_adda35c160eef9ecbd05db4395beb92d = $(`<div id="html_adda35c160eef9ecbd05db4395beb92d" style="width: 100.0%; height: 100.0%;">     <div style="font-family:'Segoe UI'; font-size:14px">         <b>Nageshwar</b><br>Dwarka, Gujarat     </div>     </div>`)[0];
+                popup_23f80e03163516586036bcd3322340d5.setContent(html_adda35c160eef9ecbd05db4395beb92d);
+            
+        
+
+        marker_0a40e2e1da128d2db0ab95562456f2e0.bindPopup(popup_23f80e03163516586036bcd3322340d5)
+        ;
+
+        
+    
+    
+            marker_0a40e2e1da128d2db0ab95562456f2e0.bindTooltip(
+                `<div>
+                     Nageshwar (Dwarka, Gujarat)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0a40e2e1da128d2db0ab95562456f2e0.setIcon(icon_3e026409df41f20a39ad863393dfbb94);
+            
+    
+            var marker_72e1abdc58e7ed3319fe42db5c908437 = L.marker(
+                [9.2881, 79.3174],
+                {
+}
+            ).addTo(marker_cluster_fa68762c052b125f3d0a1a52bc126191);
+        
+    
+            var icon_df19fe08697481d29a84749d6674dfdb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "glyphicon-map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5c78b444d8cfa005b5599ff22e468926 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_64f64332796a1b12efdbc44e6757af7c = $(`<div id="html_64f64332796a1b12efdbc44e6757af7c" style="width: 100.0%; height: 100.0%;">     <div style="font-family:'Segoe UI'; font-size:14px">         <b>Ramanathaswamy</b><br>Rameswaram, Tamil Nadu     </div>     </div>`)[0];
+                popup_5c78b444d8cfa005b5599ff22e468926.setContent(html_64f64332796a1b12efdbc44e6757af7c);
+            
+        
+
+        marker_72e1abdc58e7ed3319fe42db5c908437.bindPopup(popup_5c78b444d8cfa005b5599ff22e468926)
+        ;
+
+        
+    
+    
+            marker_72e1abdc58e7ed3319fe42db5c908437.bindTooltip(
+                `<div>
+                     Ramanathaswamy (Rameswaram, Tamil Nadu)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_72e1abdc58e7ed3319fe42db5c908437.setIcon(icon_df19fe08697481d29a84749d6674dfdb);
+            
+    
+            var marker_9bd5efe3b6db36699c6fa1fc2b765a5e = L.marker(
+                [19.8819, 75.1793],
+                {
+}
+            ).addTo(marker_cluster_fa68762c052b125f3d0a1a52bc126191);
+        
+    
+            var icon_ca4882fe8fa2e1359789b6afd44e7f78 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "glyphicon-map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f2e86a524ee1e895a94cac08c33b401a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_602a4f944171c4334524848e4b4fa25a = $(`<div id="html_602a4f944171c4334524848e4b4fa25a" style="width: 100.0%; height: 100.0%;">     <div style="font-family:'Segoe UI'; font-size:14px">         <b>Grishneshwar</b><br>Aurangabad, Maharashtra     </div>     </div>`)[0];
+                popup_f2e86a524ee1e895a94cac08c33b401a.setContent(html_602a4f944171c4334524848e4b4fa25a);
+            
+        
+
+        marker_9bd5efe3b6db36699c6fa1fc2b765a5e.bindPopup(popup_f2e86a524ee1e895a94cac08c33b401a)
+        ;
+
+        
+    
+    
+            marker_9bd5efe3b6db36699c6fa1fc2b765a5e.bindTooltip(
+                `<div>
+                     Grishneshwar (Aurangabad, Maharashtra)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9bd5efe3b6db36699c6fa1fc2b765a5e.setIcon(icon_ca4882fe8fa2e1359789b6afd44e7f78);
+            
+    
+            marker_cluster_fa68762c052b125f3d0a1a52bc126191.addTo(map_3df267293f321c4e9b1270d34ff1e13f);
+        
+</script>
+</html>

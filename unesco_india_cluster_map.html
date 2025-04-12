@@ -1,0 +1,2114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_40cb7556800541458d9bfa2d61a5b688 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_40cb7556800541458d9bfa2d61a5b688" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_40cb7556800541458d9bfa2d61a5b688 = L.map(
+                "map_40cb7556800541458d9bfa2d61a5b688",
+                {
+                    center: [22.9734, 78.6569],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b187b17fe20eb4da2352afbdce7bb36d = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b187b17fe20eb4da2352afbdce7bb36d.addTo(map_40cb7556800541458d9bfa2d61a5b688);
+        
+    
+            var marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_7162a508cff754f4059fda4de2101910 = L.marker(
+                [27.1795, 78.0211],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_fc7039173b29ac94c94e593380cacec6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d82d8466cb3b7f079ea768f649b5191e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_52c81bd1a4ef893d68f0e1987ddd79ab = $(`<div id="html_52c81bd1a4ef893d68f0e1987ddd79ab" style="width: 100.0%; height: 100.0%;"><b>Agra Fort</b><br>Type: Cultural</div>`)[0];
+                popup_d82d8466cb3b7f079ea768f649b5191e.setContent(html_52c81bd1a4ef893d68f0e1987ddd79ab);
+            
+        
+
+        marker_7162a508cff754f4059fda4de2101910.bindPopup(popup_d82d8466cb3b7f079ea768f649b5191e)
+        ;
+
+        
+    
+    
+            marker_7162a508cff754f4059fda4de2101910.bindTooltip(
+                `<div>
+                     Agra Fort
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7162a508cff754f4059fda4de2101910.setIcon(icon_fc7039173b29ac94c94e593380cacec6);
+            
+    
+            var marker_e90119dfb34ac474f7889ef613b39159 = L.marker(
+                [20.5519, 75.7033],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_0145717a2b2f89c671433e081c3dbc21 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4967602c1317fd2be544f110813b4dd5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_16523b56f42f4efd2ed99aaa2b4a1f2c = $(`<div id="html_16523b56f42f4efd2ed99aaa2b4a1f2c" style="width: 100.0%; height: 100.0%;"><b>Ajanta Caves</b><br>Type: Cultural</div>`)[0];
+                popup_4967602c1317fd2be544f110813b4dd5.setContent(html_16523b56f42f4efd2ed99aaa2b4a1f2c);
+            
+        
+
+        marker_e90119dfb34ac474f7889ef613b39159.bindPopup(popup_4967602c1317fd2be544f110813b4dd5)
+        ;
+
+        
+    
+    
+            marker_e90119dfb34ac474f7889ef613b39159.bindTooltip(
+                `<div>
+                     Ajanta Caves
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e90119dfb34ac474f7889ef613b39159.setIcon(icon_0145717a2b2f89c671433e081c3dbc21);
+            
+    
+            var marker_f26ac23bc446bb719b5f2f55542b4667 = L.marker(
+                [25.1357, 85.4438],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_a03f19ddc2423748d6c2a9f673403be0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c80402c9ec9423b74303d5aa6c7b4ea1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8f8fecb3fcfd9c26b88f0e655dfaf1ea = $(`<div id="html_8f8fecb3fcfd9c26b88f0e655dfaf1ea" style="width: 100.0%; height: 100.0%;"><b>Nalanda Mahavihara</b><br>Type: Cultural</div>`)[0];
+                popup_c80402c9ec9423b74303d5aa6c7b4ea1.setContent(html_8f8fecb3fcfd9c26b88f0e655dfaf1ea);
+            
+        
+
+        marker_f26ac23bc446bb719b5f2f55542b4667.bindPopup(popup_c80402c9ec9423b74303d5aa6c7b4ea1)
+        ;
+
+        
+    
+    
+            marker_f26ac23bc446bb719b5f2f55542b4667.bindTooltip(
+                `<div>
+                     Nalanda Mahavihara
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f26ac23bc446bb719b5f2f55542b4667.setIcon(icon_a03f19ddc2423748d6c2a9f673403be0);
+            
+    
+            var marker_e022cc500ec50e86e9fb3580b1f52ead = L.marker(
+                [23.4793, 77.7399],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_9e9e1b617b499ef59baeae155d34fcb9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8eac48ee1fe79e0aeada17deb307fb61 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b7192f93342291f1b65191985fb2a46e = $(`<div id="html_b7192f93342291f1b65191985fb2a46e" style="width: 100.0%; height: 100.0%;"><b>Buddhist Monuments at Sanchi</b><br>Type: Cultural</div>`)[0];
+                popup_8eac48ee1fe79e0aeada17deb307fb61.setContent(html_b7192f93342291f1b65191985fb2a46e);
+            
+        
+
+        marker_e022cc500ec50e86e9fb3580b1f52ead.bindPopup(popup_8eac48ee1fe79e0aeada17deb307fb61)
+        ;
+
+        
+    
+    
+            marker_e022cc500ec50e86e9fb3580b1f52ead.bindTooltip(
+                `<div>
+                     Buddhist Monuments at Sanchi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e022cc500ec50e86e9fb3580b1f52ead.setIcon(icon_9e9e1b617b499ef59baeae155d34fcb9);
+            
+    
+            var marker_976695d1f988ba7b394038fcd5fe6884 = L.marker(
+                [26.5775, 93.1711],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_3a76f8f58601175ceb1946b674eef7f6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_78abede6a7ee7ec74e287b8d0c86ad47 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e26a72a73daab02838619a5ae1216665 = $(`<div id="html_e26a72a73daab02838619a5ae1216665" style="width: 100.0%; height: 100.0%;"><b>Kaziranga National Park</b><br>Type: Natural</div>`)[0];
+                popup_78abede6a7ee7ec74e287b8d0c86ad47.setContent(html_e26a72a73daab02838619a5ae1216665);
+            
+        
+
+        marker_976695d1f988ba7b394038fcd5fe6884.bindPopup(popup_78abede6a7ee7ec74e287b8d0c86ad47)
+        ;
+
+        
+    
+    
+            marker_976695d1f988ba7b394038fcd5fe6884.bindTooltip(
+                `<div>
+                     Kaziranga National Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_976695d1f988ba7b394038fcd5fe6884.setIcon(icon_3a76f8f58601175ceb1946b674eef7f6);
+            
+    
+            var marker_d362ef999cb3eb9e5c26204ed89ac4b6 = L.marker(
+                [21.9497, 89.1833],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_6f34b5c5ace0a3c3cc1ec8e7a8a69fa9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e90c1239754da16f4fd8409c80820f82 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3ce2d63ebccdc4a102013e39fe46df10 = $(`<div id="html_3ce2d63ebccdc4a102013e39fe46df10" style="width: 100.0%; height: 100.0%;"><b>Sundarbans National Park</b><br>Type: Natural</div>`)[0];
+                popup_e90c1239754da16f4fd8409c80820f82.setContent(html_3ce2d63ebccdc4a102013e39fe46df10);
+            
+        
+
+        marker_d362ef999cb3eb9e5c26204ed89ac4b6.bindPopup(popup_e90c1239754da16f4fd8409c80820f82)
+        ;
+
+        
+    
+    
+            marker_d362ef999cb3eb9e5c26204ed89ac4b6.bindTooltip(
+                `<div>
+                     Sundarbans National Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d362ef999cb3eb9e5c26204ed89ac4b6.setIcon(icon_6f34b5c5ace0a3c3cc1ec8e7a8a69fa9);
+            
+    
+            var marker_da5798e66f1eea7a3bf95061c46c7a8c = L.marker(
+                [27.652, 88.3718],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_5ae0f7a4d0fd65d0c328a377b9e6f9ac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_009d42cd31d2f30ec3d329ac8936d12f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f47d70a69f8c4a98495b2e7562455131 = $(`<div id="html_f47d70a69f8c4a98495b2e7562455131" style="width: 100.0%; height: 100.0%;"><b>Khangchendzonga National Park</b><br>Type: Mixed</div>`)[0];
+                popup_009d42cd31d2f30ec3d329ac8936d12f.setContent(html_f47d70a69f8c4a98495b2e7562455131);
+            
+        
+
+        marker_da5798e66f1eea7a3bf95061c46c7a8c.bindPopup(popup_009d42cd31d2f30ec3d329ac8936d12f)
+        ;
+
+        
+    
+    
+            marker_da5798e66f1eea7a3bf95061c46c7a8c.bindTooltip(
+                `<div>
+                     Khangchendzonga National Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_da5798e66f1eea7a3bf95061c46c7a8c.setIcon(icon_5ae0f7a4d0fd65d0c328a377b9e6f9ac);
+            
+    
+            var marker_a8186038802b166bc6656248be0e9a71 = L.marker(
+                [28.5933, 77.2507],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_a450c4a5f46a5f5acdaf3ea6b959da88 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6db3797e6ef1ae964340b78e814d9d63 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8d47a0f48acec6eeb9266a19dba70e10 = $(`<div id="html_8d47a0f48acec6eeb9266a19dba70e10" style="width: 100.0%; height: 100.0%;"><b>Humayun's Tomb</b><br>Type: Cultural</div>`)[0];
+                popup_6db3797e6ef1ae964340b78e814d9d63.setContent(html_8d47a0f48acec6eeb9266a19dba70e10);
+            
+        
+
+        marker_a8186038802b166bc6656248be0e9a71.bindPopup(popup_6db3797e6ef1ae964340b78e814d9d63)
+        ;
+
+        
+    
+    
+            marker_a8186038802b166bc6656248be0e9a71.bindTooltip(
+                `<div>
+                     Humayun's Tomb
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a8186038802b166bc6656248be0e9a71.setIcon(icon_a450c4a5f46a5f5acdaf3ea6b959da88);
+            
+    
+            var marker_72ab7fa6fd2da59f1896e45819f4c462 = L.marker(
+                [28.5244, 77.1855],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_101e59559d1626dd6a434e446a7c4414 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_29f898dd7e2407eab0863abcae194b6b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1b6d9191fd43373404f480affdcb5256 = $(`<div id="html_1b6d9191fd43373404f480affdcb5256" style="width: 100.0%; height: 100.0%;"><b>Qutb Minar</b><br>Type: Cultural</div>`)[0];
+                popup_29f898dd7e2407eab0863abcae194b6b.setContent(html_1b6d9191fd43373404f480affdcb5256);
+            
+        
+
+        marker_72ab7fa6fd2da59f1896e45819f4c462.bindPopup(popup_29f898dd7e2407eab0863abcae194b6b)
+        ;
+
+        
+    
+    
+            marker_72ab7fa6fd2da59f1896e45819f4c462.bindTooltip(
+                `<div>
+                     Qutb Minar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_72ab7fa6fd2da59f1896e45819f4c462.setIcon(icon_101e59559d1626dd6a434e446a7c4414);
+            
+    
+            var marker_1f0f10c45d6e81211399c068038e42e0 = L.marker(
+                [27.0937, 77.66],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_9ed75bda9515b21e76aa2d840ac269ab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_26bd77e11c397232f0fdc3d691e264ae = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cc3f1caa74d7ae02f9dec273994df5e5 = $(`<div id="html_cc3f1caa74d7ae02f9dec273994df5e5" style="width: 100.0%; height: 100.0%;"><b>Fatehpur Sikri</b><br>Type: Cultural</div>`)[0];
+                popup_26bd77e11c397232f0fdc3d691e264ae.setContent(html_cc3f1caa74d7ae02f9dec273994df5e5);
+            
+        
+
+        marker_1f0f10c45d6e81211399c068038e42e0.bindPopup(popup_26bd77e11c397232f0fdc3d691e264ae)
+        ;
+
+        
+    
+    
+            marker_1f0f10c45d6e81211399c068038e42e0.bindTooltip(
+                `<div>
+                     Fatehpur Sikri
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1f0f10c45d6e81211399c068038e42e0.setIcon(icon_9ed75bda9515b21e76aa2d840ac269ab);
+            
+    
+            var marker_64c622a95ddd87d325a75b40b8f5de12 = L.marker(
+                [27.1751, 78.0421],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_ed80f05f87290c0defb6b75ca7bda9d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_287801ad569b1d323164ce32e7ae077e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a4a08d2a3dc7eb5337f817d0e5f80839 = $(`<div id="html_a4a08d2a3dc7eb5337f817d0e5f80839" style="width: 100.0%; height: 100.0%;"><b>Taj Mahal</b><br>Type: Cultural</div>`)[0];
+                popup_287801ad569b1d323164ce32e7ae077e.setContent(html_a4a08d2a3dc7eb5337f817d0e5f80839);
+            
+        
+
+        marker_64c622a95ddd87d325a75b40b8f5de12.bindPopup(popup_287801ad569b1d323164ce32e7ae077e)
+        ;
+
+        
+    
+    
+            marker_64c622a95ddd87d325a75b40b8f5de12.bindTooltip(
+                `<div>
+                     Taj Mahal
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_64c622a95ddd87d325a75b40b8f5de12.setIcon(icon_ed80f05f87290c0defb6b75ca7bda9d3);
+            
+    
+            var marker_d3abfc8f665a9190d42a0c2a43aeaf6c = L.marker(
+                [24.6951, 84.9913],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_94ca59486bec63cd1e31e60f289e2523 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_71275b933575f40a57534c29747a2064 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b34acb096d0632d01c3d6e712e294dce = $(`<div id="html_b34acb096d0632d01c3d6e712e294dce" style="width: 100.0%; height: 100.0%;"><b>Mahabodhi Temple</b><br>Type: Cultural</div>`)[0];
+                popup_71275b933575f40a57534c29747a2064.setContent(html_b34acb096d0632d01c3d6e712e294dce);
+            
+        
+
+        marker_d3abfc8f665a9190d42a0c2a43aeaf6c.bindPopup(popup_71275b933575f40a57534c29747a2064)
+        ;
+
+        
+    
+    
+            marker_d3abfc8f665a9190d42a0c2a43aeaf6c.bindTooltip(
+                `<div>
+                     Mahabodhi Temple
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d3abfc8f665a9190d42a0c2a43aeaf6c.setIcon(icon_94ca59486bec63cd1e31e60f289e2523);
+            
+    
+            var marker_b46638d7431e6392e98ec51b63be9283 = L.marker(
+                [15.335, 76.46],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_050ced0bd2c0800a7c9aea155cadcc65 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_24014b84163594feefe44758d4885694 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_12bdaba7e3ec48cdf720a9cf5d8586cd = $(`<div id="html_12bdaba7e3ec48cdf720a9cf5d8586cd" style="width: 100.0%; height: 100.0%;"><b>Hampi Monuments</b><br>Type: Cultural</div>`)[0];
+                popup_24014b84163594feefe44758d4885694.setContent(html_12bdaba7e3ec48cdf720a9cf5d8586cd);
+            
+        
+
+        marker_b46638d7431e6392e98ec51b63be9283.bindPopup(popup_24014b84163594feefe44758d4885694)
+        ;
+
+        
+    
+    
+            marker_b46638d7431e6392e98ec51b63be9283.bindTooltip(
+                `<div>
+                     Hampi Monuments
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b46638d7431e6392e98ec51b63be9283.setIcon(icon_050ced0bd2c0800a7c9aea155cadcc65);
+            
+    
+            var marker_f2978267ca17f8e2983fcfd87c1a8612 = L.marker(
+                [20.0268, 75.1795],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_bb8a9827a567a5d51f4a7cd2e3a8bd52 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_734c1ed5925cdbee374686f518b6b793 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_796c2ff95bf1d4239489589178fbef3f = $(`<div id="html_796c2ff95bf1d4239489589178fbef3f" style="width: 100.0%; height: 100.0%;"><b>Ellora Caves</b><br>Type: Cultural</div>`)[0];
+                popup_734c1ed5925cdbee374686f518b6b793.setContent(html_796c2ff95bf1d4239489589178fbef3f);
+            
+        
+
+        marker_f2978267ca17f8e2983fcfd87c1a8612.bindPopup(popup_734c1ed5925cdbee374686f518b6b793)
+        ;
+
+        
+    
+    
+            marker_f2978267ca17f8e2983fcfd87c1a8612.bindTooltip(
+                `<div>
+                     Ellora Caves
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f2978267ca17f8e2983fcfd87c1a8612.setIcon(icon_bb8a9827a567a5d51f4a7cd2e3a8bd52);
+            
+    
+            var marker_7cdec47cd385c807dac0336850b2d38e = L.marker(
+                [18.9633, 72.931],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_ec91f5b642ce25de9643bc5127c33d4e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e85104acf73bb957c239e176c227ccd9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_726741901c7d4e794e84745b9b977337 = $(`<div id="html_726741901c7d4e794e84745b9b977337" style="width: 100.0%; height: 100.0%;"><b>Elephanta Caves</b><br>Type: Cultural</div>`)[0];
+                popup_e85104acf73bb957c239e176c227ccd9.setContent(html_726741901c7d4e794e84745b9b977337);
+            
+        
+
+        marker_7cdec47cd385c807dac0336850b2d38e.bindPopup(popup_e85104acf73bb957c239e176c227ccd9)
+        ;
+
+        
+    
+    
+            marker_7cdec47cd385c807dac0336850b2d38e.bindTooltip(
+                `<div>
+                     Elephanta Caves
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7cdec47cd385c807dac0336850b2d38e.setIcon(icon_ec91f5b642ce25de9643bc5127c33d4e);
+            
+    
+            var marker_e4aa46103e91d4460ef7509567b7bb5e = L.marker(
+                [10.7821, 79.1319],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_86c9eb05f3f92d63aafbbe2c645df188 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_582b534b9e61a6c90535a59f3f09a7fc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_396b413bd6ab119d5fc467fe60639b27 = $(`<div id="html_396b413bd6ab119d5fc467fe60639b27" style="width: 100.0%; height: 100.0%;"><b>Chola Temples</b><br>Type: Cultural</div>`)[0];
+                popup_582b534b9e61a6c90535a59f3f09a7fc.setContent(html_396b413bd6ab119d5fc467fe60639b27);
+            
+        
+
+        marker_e4aa46103e91d4460ef7509567b7bb5e.bindPopup(popup_582b534b9e61a6c90535a59f3f09a7fc)
+        ;
+
+        
+    
+    
+            marker_e4aa46103e91d4460ef7509567b7bb5e.bindTooltip(
+                `<div>
+                     Chola Temples
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e4aa46103e91d4460ef7509567b7bb5e.setIcon(icon_86c9eb05f3f92d63aafbbe2c645df188);
+            
+    
+            var marker_00eb1bd8f9fc5555ab1dec98a666b08b = L.marker(
+                [26.9124, 75.7873],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_bbd39aee8fd3efc61fb1cf760e55e78f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f0628205960664bd6b29dd07c5b2af79 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1781f32f6e754b9686f4472cd7e336c3 = $(`<div id="html_1781f32f6e754b9686f4472cd7e336c3" style="width: 100.0%; height: 100.0%;"><b>Jaipur City</b><br>Type: Cultural</div>`)[0];
+                popup_f0628205960664bd6b29dd07c5b2af79.setContent(html_1781f32f6e754b9686f4472cd7e336c3);
+            
+        
+
+        marker_00eb1bd8f9fc5555ab1dec98a666b08b.bindPopup(popup_f0628205960664bd6b29dd07c5b2af79)
+        ;
+
+        
+    
+    
+            marker_00eb1bd8f9fc5555ab1dec98a666b08b.bindTooltip(
+                `<div>
+                     Jaipur City
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_00eb1bd8f9fc5555ab1dec98a666b08b.setIcon(icon_bbd39aee8fd3efc61fb1cf760e55e78f);
+            
+    
+            var marker_a60aae7a2821bc7c510d874fb2fbf945 = L.marker(
+                [10.3813, 76.1467],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_f3542aaae7558f3b7e0df4cc59f1cd1e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0758ff6c4f92a4830b33b2807c77eda6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d891a915fb4d4e9588b1473ebe8d6bac = $(`<div id="html_d891a915fb4d4e9588b1473ebe8d6bac" style="width: 100.0%; height: 100.0%;"><b>Western Ghats</b><br>Type: Natural</div>`)[0];
+                popup_0758ff6c4f92a4830b33b2807c77eda6.setContent(html_d891a915fb4d4e9588b1473ebe8d6bac);
+            
+        
+
+        marker_a60aae7a2821bc7c510d874fb2fbf945.bindPopup(popup_0758ff6c4f92a4830b33b2807c77eda6)
+        ;
+
+        
+    
+    
+            marker_a60aae7a2821bc7c510d874fb2fbf945.bindTooltip(
+                `<div>
+                     Western Ghats
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a60aae7a2821bc7c510d874fb2fbf945.setIcon(icon_f3542aaae7558f3b7e0df4cc59f1cd1e);
+            
+    
+            var marker_44ca3f91a3757f6f35e36f863ff44c51 = L.marker(
+                [31.7, 77.3833],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_34df0ac95e7680ee32c47bd42f837fb6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bc644acf841a36bd87b7c01f817401b4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1ae24abde5d81193ee13a9ff3e90747f = $(`<div id="html_1ae24abde5d81193ee13a9ff3e90747f" style="width: 100.0%; height: 100.0%;"><b>Great Himalayan National Park</b><br>Type: Natural</div>`)[0];
+                popup_bc644acf841a36bd87b7c01f817401b4.setContent(html_1ae24abde5d81193ee13a9ff3e90747f);
+            
+        
+
+        marker_44ca3f91a3757f6f35e36f863ff44c51.bindPopup(popup_bc644acf841a36bd87b7c01f817401b4)
+        ;
+
+        
+    
+    
+            marker_44ca3f91a3757f6f35e36f863ff44c51.bindTooltip(
+                `<div>
+                     Great Himalayan National Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_44ca3f91a3757f6f35e36f863ff44c51.setIcon(icon_34df0ac95e7680ee32c47bd42f837fb6);
+            
+    
+            var marker_0b299b1c4da9d59982f5f29d782bbcb4 = L.marker(
+                [26.6593, 91.0011],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_1fc1d43e6e426d88a9ed126dc1bcffbc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e4ce45c7d54789ad6b1b2059c9ba2bc3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0023ff5e18fcd7381dce8ef2591757d4 = $(`<div id="html_0023ff5e18fcd7381dce8ef2591757d4" style="width: 100.0%; height: 100.0%;"><b>Manas Wildlife Sanctuary</b><br>Type: Natural</div>`)[0];
+                popup_e4ce45c7d54789ad6b1b2059c9ba2bc3.setContent(html_0023ff5e18fcd7381dce8ef2591757d4);
+            
+        
+
+        marker_0b299b1c4da9d59982f5f29d782bbcb4.bindPopup(popup_e4ce45c7d54789ad6b1b2059c9ba2bc3)
+        ;
+
+        
+    
+    
+            marker_0b299b1c4da9d59982f5f29d782bbcb4.bindTooltip(
+                `<div>
+                     Manas Wildlife Sanctuary
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0b299b1c4da9d59982f5f29d782bbcb4.setIcon(icon_1fc1d43e6e426d88a9ed126dc1bcffbc);
+            
+    
+            var marker_0286e66d6c54497a1304dc0da76061f0 = L.marker(
+                [27.1591, 77.5218],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_49464fdbbf6c746b00ad27b50b551d4d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_da518181a50aa4a8dd0b384b2442bdd3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c486ed7c7fa913687ccdb42a76cbbdb7 = $(`<div id="html_c486ed7c7fa913687ccdb42a76cbbdb7" style="width: 100.0%; height: 100.0%;"><b>Keoladeo National Park</b><br>Type: Natural</div>`)[0];
+                popup_da518181a50aa4a8dd0b384b2442bdd3.setContent(html_c486ed7c7fa913687ccdb42a76cbbdb7);
+            
+        
+
+        marker_0286e66d6c54497a1304dc0da76061f0.bindPopup(popup_da518181a50aa4a8dd0b384b2442bdd3)
+        ;
+
+        
+    
+    
+            marker_0286e66d6c54497a1304dc0da76061f0.bindTooltip(
+                `<div>
+                     Keoladeo National Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0286e66d6c54497a1304dc0da76061f0.setIcon(icon_49464fdbbf6c746b00ad27b50b551d4d);
+            
+    
+            var marker_0dbee48040d89734f550e6f6842515f5 = L.marker(
+                [23.8583, 72.1014],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_8b8045af67a8431ee025c3961f4a35a3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_33debfab15419af802acf53e1a8a25c6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1956ba3d45bd61e99157b572843c381b = $(`<div id="html_1956ba3d45bd61e99157b572843c381b" style="width: 100.0%; height: 100.0%;"><b>Rani ki Vav</b><br>Type: Cultural</div>`)[0];
+                popup_33debfab15419af802acf53e1a8a25c6.setContent(html_1956ba3d45bd61e99157b572843c381b);
+            
+        
+
+        marker_0dbee48040d89734f550e6f6842515f5.bindPopup(popup_33debfab15419af802acf53e1a8a25c6)
+        ;
+
+        
+    
+    
+            marker_0dbee48040d89734f550e6f6842515f5.bindTooltip(
+                `<div>
+                     Rani ki Vav
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0dbee48040d89734f550e6f6842515f5.setIcon(icon_8b8045af67a8431ee025c3961f4a35a3);
+            
+    
+            var marker_32af460990dc96c554227b0dc731d12e = L.marker(
+                [22.9364, 77.6121],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_dca568e75c4ad2b2dea9fc2975e1063e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bad968c0926745f6f8dd7bb3a0afad85 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_34e44fe0e829145238fa0ff3815c3acf = $(`<div id="html_34e44fe0e829145238fa0ff3815c3acf" style="width: 100.0%; height: 100.0%;"><b>Rock Shelters of Bhimbetka</b><br>Type: Cultural</div>`)[0];
+                popup_bad968c0926745f6f8dd7bb3a0afad85.setContent(html_34e44fe0e829145238fa0ff3815c3acf);
+            
+        
+
+        marker_32af460990dc96c554227b0dc731d12e.bindPopup(popup_bad968c0926745f6f8dd7bb3a0afad85)
+        ;
+
+        
+    
+    
+            marker_32af460990dc96c554227b0dc731d12e.bindTooltip(
+                `<div>
+                     Rock Shelters of Bhimbetka
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_32af460990dc96c554227b0dc731d12e.setIcon(icon_dca568e75c4ad2b2dea9fc2975e1063e);
+            
+    
+            var marker_97f35d831442894e087cffdf67c51b11 = L.marker(
+                [19.8876, 86.0948],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_62db562f7b308150a6e12e32a0a4b74a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b3f59abbd8ada763e651483c2d5b495b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f58e7890d0e0235a55798fec7ea1d525 = $(`<div id="html_f58e7890d0e0235a55798fec7ea1d525" style="width: 100.0%; height: 100.0%;"><b>Sun Temple, Konark</b><br>Type: Cultural</div>`)[0];
+                popup_b3f59abbd8ada763e651483c2d5b495b.setContent(html_f58e7890d0e0235a55798fec7ea1d525);
+            
+        
+
+        marker_97f35d831442894e087cffdf67c51b11.bindPopup(popup_b3f59abbd8ada763e651483c2d5b495b)
+        ;
+
+        
+    
+    
+            marker_97f35d831442894e087cffdf67c51b11.bindTooltip(
+                `<div>
+                     Sun Temple, Konark
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_97f35d831442894e087cffdf67c51b11.setIcon(icon_62db562f7b308150a6e12e32a0a4b74a);
+            
+    
+            var marker_48a4d26379cd2e63ac5b3ce5aa2e8503 = L.marker(
+                [15.9477, 75.818],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_f160d092d6538ceb1dec7a4d4c2a7519 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_05760cc515264ea1b8d3236130c14d92 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cbecbcd2a5d4eb642808f70ec4992fc2 = $(`<div id="html_cbecbcd2a5d4eb642808f70ec4992fc2" style="width: 100.0%; height: 100.0%;"><b>Pattadakal Monuments</b><br>Type: Cultural</div>`)[0];
+                popup_05760cc515264ea1b8d3236130c14d92.setContent(html_cbecbcd2a5d4eb642808f70ec4992fc2);
+            
+        
+
+        marker_48a4d26379cd2e63ac5b3ce5aa2e8503.bindPopup(popup_05760cc515264ea1b8d3236130c14d92)
+        ;
+
+        
+    
+    
+            marker_48a4d26379cd2e63ac5b3ce5aa2e8503.bindTooltip(
+                `<div>
+                     Pattadakal Monuments
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_48a4d26379cd2e63ac5b3ce5aa2e8503.setIcon(icon_f160d092d6538ceb1dec7a4d4c2a7519);
+            
+    
+            var marker_6be9baef4497084c425d4b6869d47cd9 = L.marker(
+                [18.9388, 72.8272],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_d9a5adf7ef00286d24315c181b105c1a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7e851279ee32feab71163d4e2e0e5648 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_87d604e5df05f0b56b0e896631a86169 = $(`<div id="html_87d604e5df05f0b56b0e896631a86169" style="width: 100.0%; height: 100.0%;"><b>Victorian Gothic Mumbai</b><br>Type: Cultural</div>`)[0];
+                popup_7e851279ee32feab71163d4e2e0e5648.setContent(html_87d604e5df05f0b56b0e896631a86169);
+            
+        
+
+        marker_6be9baef4497084c425d4b6869d47cd9.bindPopup(popup_7e851279ee32feab71163d4e2e0e5648)
+        ;
+
+        
+    
+    
+            marker_6be9baef4497084c425d4b6869d47cd9.bindTooltip(
+                `<div>
+                     Victorian Gothic Mumbai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6be9baef4497084c425d4b6869d47cd9.setIcon(icon_d9a5adf7ef00286d24315c181b105c1a);
+            
+    
+            var marker_e0cf6ab9b1dfdc8104293fbb4801c116 = L.marker(
+                [23.6795, 87.6856],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_a12238406d109c8996ead4310563ddec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ba5a8aa907def996850fa254efe210a7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8e2f22bef6e5be79549c05b3ca1c80e7 = $(`<div id="html_8e2f22bef6e5be79549c05b3ca1c80e7" style="width: 100.0%; height: 100.0%;"><b>Santiniketan</b><br>Type: Cultural</div>`)[0];
+                popup_ba5a8aa907def996850fa254efe210a7.setContent(html_8e2f22bef6e5be79549c05b3ca1c80e7);
+            
+        
+
+        marker_e0cf6ab9b1dfdc8104293fbb4801c116.bindPopup(popup_ba5a8aa907def996850fa254efe210a7)
+        ;
+
+        
+    
+    
+            marker_e0cf6ab9b1dfdc8104293fbb4801c116.bindTooltip(
+                `<div>
+                     Santiniketan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e0cf6ab9b1dfdc8104293fbb4801c116.setIcon(icon_a12238406d109c8996ead4310563ddec);
+            
+    
+            var marker_32878e4b88c4792d33a664f66ede0734 = L.marker(
+                [23.8875, 70.2194],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_a2e084712b61dc14f9a6d9975cf1fa9f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b8e9c58548faa84464e38cea21a39ece = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_60974bc298c2114d424cb648e9e66ad2 = $(`<div id="html_60974bc298c2114d424cb648e9e66ad2" style="width: 100.0%; height: 100.0%;"><b>Dholavira</b><br>Type: Cultural</div>`)[0];
+                popup_b8e9c58548faa84464e38cea21a39ece.setContent(html_60974bc298c2114d424cb648e9e66ad2);
+            
+        
+
+        marker_32878e4b88c4792d33a664f66ede0734.bindPopup(popup_b8e9c58548faa84464e38cea21a39ece)
+        ;
+
+        
+    
+    
+            marker_32878e4b88c4792d33a664f66ede0734.bindTooltip(
+                `<div>
+                     Dholavira
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_32878e4b88c4792d33a664f66ede0734.setIcon(icon_a2e084712b61dc14f9a6d9975cf1fa9f);
+            
+    
+            var marker_106e4dc6a65c8c88f803411a9d6177f7 = L.marker(
+                [18.2341, 79.9429],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_5e2d902fa9b9e208190f082cc3776371 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3cf4e56bcfc74f77b4dbce8fd08cf305 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f5b1cd088cb3901157b128acc0e130e2 = $(`<div id="html_f5b1cd088cb3901157b128acc0e130e2" style="width: 100.0%; height: 100.0%;"><b>Ramappa Temple</b><br>Type: Cultural</div>`)[0];
+                popup_3cf4e56bcfc74f77b4dbce8fd08cf305.setContent(html_f5b1cd088cb3901157b128acc0e130e2);
+            
+        
+
+        marker_106e4dc6a65c8c88f803411a9d6177f7.bindPopup(popup_3cf4e56bcfc74f77b4dbce8fd08cf305)
+        ;
+
+        
+    
+    
+            marker_106e4dc6a65c8c88f803411a9d6177f7.bindTooltip(
+                `<div>
+                     Ramappa Temple
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_106e4dc6a65c8c88f803411a9d6177f7.setIcon(icon_5e2d902fa9b9e208190f082cc3776371);
+            
+    
+            var marker_970945e6ef4d2398083086599c4c3b08 = L.marker(
+                [18.9402, 72.8356],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_b2b5f36e9c6ed0281e0fca60244e03a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b963fd359240d0aeeee32aaf331bcaf7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5b80f99eedc178d756568b15b657b24f = $(`<div id="html_5b80f99eedc178d756568b15b657b24f" style="width: 100.0%; height: 100.0%;"><b>Chhatrapati Shivaji Terminus</b><br>Type: Cultural</div>`)[0];
+                popup_b963fd359240d0aeeee32aaf331bcaf7.setContent(html_5b80f99eedc178d756568b15b657b24f);
+            
+        
+
+        marker_970945e6ef4d2398083086599c4c3b08.bindPopup(popup_b963fd359240d0aeeee32aaf331bcaf7)
+        ;
+
+        
+    
+    
+            marker_970945e6ef4d2398083086599c4c3b08.bindTooltip(
+                `<div>
+                     Chhatrapati Shivaji Terminus
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_970945e6ef4d2398083086599c4c3b08.setIcon(icon_b2b5f36e9c6ed0281e0fca60244e03a4);
+            
+    
+            var marker_5660d3775fc58cabae7a1919fcbcec44 = L.marker(
+                [15.5, 73.8333],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_4da51338864476ac5a5dc8e48d9d846a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e87e574b5fc04c67b82699d38e188e66 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e626675c3321a24187ff6beb92fda187 = $(`<div id="html_e626675c3321a24187ff6beb92fda187" style="width: 100.0%; height: 100.0%;"><b>Churches of Goa</b><br>Type: Cultural</div>`)[0];
+                popup_e87e574b5fc04c67b82699d38e188e66.setContent(html_e626675c3321a24187ff6beb92fda187);
+            
+        
+
+        marker_5660d3775fc58cabae7a1919fcbcec44.bindPopup(popup_e87e574b5fc04c67b82699d38e188e66)
+        ;
+
+        
+    
+    
+            marker_5660d3775fc58cabae7a1919fcbcec44.bindTooltip(
+                `<div>
+                     Churches of Goa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5660d3775fc58cabae7a1919fcbcec44.setIcon(icon_4da51338864476ac5a5dc8e48d9d846a);
+            
+    
+            var marker_1d4b99ffb7487c30a2e9dec7d36b81ab = L.marker(
+                [22.487, 73.537],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_18d7ef94c8ac8b07734b3a487c6bd199 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_042ab5cc5afda8e169739b730e27db68 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6006477e903de60e0601a849769ae088 = $(`<div id="html_6006477e903de60e0601a849769ae088" style="width: 100.0%; height: 100.0%;"><b>Champaner-Pavagadh</b><br>Type: Cultural</div>`)[0];
+                popup_042ab5cc5afda8e169739b730e27db68.setContent(html_6006477e903de60e0601a849769ae088);
+            
+        
+
+        marker_1d4b99ffb7487c30a2e9dec7d36b81ab.bindPopup(popup_042ab5cc5afda8e169739b730e27db68)
+        ;
+
+        
+    
+    
+            marker_1d4b99ffb7487c30a2e9dec7d36b81ab.bindTooltip(
+                `<div>
+                     Champaner-Pavagadh
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1d4b99ffb7487c30a2e9dec7d36b81ab.setIcon(icon_18d7ef94c8ac8b07734b3a487c6bd199);
+            
+    
+            var marker_3c83f3c33da903d7bfe1d65bbd5fe7b1 = L.marker(
+                [23.0225, 72.5714],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_c4dfe0214f4cb055d5845842504628d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9ee7a212a84735bbce2f72b4e34162bb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cb99b7fe948d6a9e8ad4c04cfee0a561 = $(`<div id="html_cb99b7fe948d6a9e8ad4c04cfee0a561" style="width: 100.0%; height: 100.0%;"><b>Ahmedabad City</b><br>Type: Cultural</div>`)[0];
+                popup_9ee7a212a84735bbce2f72b4e34162bb.setContent(html_cb99b7fe948d6a9e8ad4c04cfee0a561);
+            
+        
+
+        marker_3c83f3c33da903d7bfe1d65bbd5fe7b1.bindPopup(popup_9ee7a212a84735bbce2f72b4e34162bb)
+        ;
+
+        
+    
+    
+            marker_3c83f3c33da903d7bfe1d65bbd5fe7b1.bindTooltip(
+                `<div>
+                     Ahmedabad City
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3c83f3c33da903d7bfe1d65bbd5fe7b1.setIcon(icon_c4dfe0214f4cb055d5845842504628d4);
+            
+    
+            var marker_135a7e22cf1fd064ff145042e06dee01 = L.marker(
+                [30.7333, 76.7794],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_123672e635b454976b03e72c0e08024b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7bb22bd4ac5dab1310d9a9a24a119e28 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_577215e55bdf0a45845433f7240d92ea = $(`<div id="html_577215e55bdf0a45845433f7240d92ea" style="width: 100.0%; height: 100.0%;"><b>Le Corbusier Buildings</b><br>Type: Cultural</div>`)[0];
+                popup_7bb22bd4ac5dab1310d9a9a24a119e28.setContent(html_577215e55bdf0a45845433f7240d92ea);
+            
+        
+
+        marker_135a7e22cf1fd064ff145042e06dee01.bindPopup(popup_7bb22bd4ac5dab1310d9a9a24a119e28)
+        ;
+
+        
+    
+    
+            marker_135a7e22cf1fd064ff145042e06dee01.bindTooltip(
+                `<div>
+                     Le Corbusier Buildings
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_135a7e22cf1fd064ff145042e06dee01.setIcon(icon_123672e635b454976b03e72c0e08024b);
+            
+    
+            var marker_00a17338b3a344b93c5caea9ca3b1c7e = L.marker(
+                [24.8516, 79.921],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_32e2859583fb648a95355cc4fb221c87 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9181ee58167ae76edadffaefb1295e69 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_568881d6dba46ed084d67b407979d078 = $(`<div id="html_568881d6dba46ed084d67b407979d078" style="width: 100.0%; height: 100.0%;"><b>Khajuraho</b><br>Type: Cultural</div>`)[0];
+                popup_9181ee58167ae76edadffaefb1295e69.setContent(html_568881d6dba46ed084d67b407979d078);
+            
+        
+
+        marker_00a17338b3a344b93c5caea9ca3b1c7e.bindPopup(popup_9181ee58167ae76edadffaefb1295e69)
+        ;
+
+        
+    
+    
+            marker_00a17338b3a344b93c5caea9ca3b1c7e.bindTooltip(
+                `<div>
+                     Khajuraho
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_00a17338b3a344b93c5caea9ca3b1c7e.setIcon(icon_32e2859583fb648a95355cc4fb221c87);
+            
+    
+            var marker_964d72ec552373f6bd44c20843bbf6cd = L.marker(
+                [12.6167, 80.191],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_cae965b3b6e29eced3dbb0e191e4066b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0302c0e891ac9df8c675d06cb27c332b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c593fb2daddca4847612fcfec2062c93 = $(`<div id="html_c593fb2daddca4847612fcfec2062c93" style="width: 100.0%; height: 100.0%;"><b>Mahabalipuram</b><br>Type: Cultural</div>`)[0];
+                popup_0302c0e891ac9df8c675d06cb27c332b.setContent(html_c593fb2daddca4847612fcfec2062c93);
+            
+        
+
+        marker_964d72ec552373f6bd44c20843bbf6cd.bindPopup(popup_0302c0e891ac9df8c675d06cb27c332b)
+        ;
+
+        
+    
+    
+            marker_964d72ec552373f6bd44c20843bbf6cd.bindTooltip(
+                `<div>
+                     Mahabalipuram
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_964d72ec552373f6bd44c20843bbf6cd.setIcon(icon_cae965b3b6e29eced3dbb0e191e4066b);
+            
+    
+            var marker_7ae91fe201958bed97b5fa9b7fd07dd8 = L.marker(
+                [26.9246, 75.8235],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_392f574efa4941b2193bd171d5332205 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ec2994d7e93cf4d8a633c1628a8be0cd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_753daa919ba96e4e9648a0896a8dc76c = $(`<div id="html_753daa919ba96e4e9648a0896a8dc76c" style="width: 100.0%; height: 100.0%;"><b>Jantar Mantar</b><br>Type: Cultural</div>`)[0];
+                popup_ec2994d7e93cf4d8a633c1628a8be0cd.setContent(html_753daa919ba96e4e9648a0896a8dc76c);
+            
+        
+
+        marker_7ae91fe201958bed97b5fa9b7fd07dd8.bindPopup(popup_ec2994d7e93cf4d8a633c1628a8be0cd)
+        ;
+
+        
+    
+    
+            marker_7ae91fe201958bed97b5fa9b7fd07dd8.bindTooltip(
+                `<div>
+                     Jantar Mantar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7ae91fe201958bed97b5fa9b7fd07dd8.setIcon(icon_392f574efa4941b2193bd171d5332205);
+            
+    
+            var marker_d42103c5edf9c9c3753645f2e3ef7be9 = L.marker(
+                [28.6562, 77.241],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_fbaa5dabe7a601f598d7c906fe3e974b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6b90d7c766161e4b5ba69c3de9676b8d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c873135ed4df8af5425377276fdd9987 = $(`<div id="html_c873135ed4df8af5425377276fdd9987" style="width: 100.0%; height: 100.0%;"><b>Red Fort</b><br>Type: Cultural</div>`)[0];
+                popup_6b90d7c766161e4b5ba69c3de9676b8d.setContent(html_c873135ed4df8af5425377276fdd9987);
+            
+        
+
+        marker_d42103c5edf9c9c3753645f2e3ef7be9.bindPopup(popup_6b90d7c766161e4b5ba69c3de9676b8d)
+        ;
+
+        
+    
+    
+            marker_d42103c5edf9c9c3753645f2e3ef7be9.bindTooltip(
+                `<div>
+                     Red Fort
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d42103c5edf9c9c3753645f2e3ef7be9.setIcon(icon_fbaa5dabe7a601f598d7c906fe3e974b);
+            
+    
+            var marker_c9b8362eb3f049201deb9406655d3d54 = L.marker(
+                [30.728, 79.605],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_828746476c35faca0922bcda83623277 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_71951874a27fbabdcc986848464c9aa8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9d4e37f6ff76d2887c9d1f8e596a71cb = $(`<div id="html_9d4e37f6ff76d2887c9d1f8e596a71cb" style="width: 100.0%; height: 100.0%;"><b>Nanda Devi & Valley of Flowers</b><br>Type: Natural</div>`)[0];
+                popup_71951874a27fbabdcc986848464c9aa8.setContent(html_9d4e37f6ff76d2887c9d1f8e596a71cb);
+            
+        
+
+        marker_c9b8362eb3f049201deb9406655d3d54.bindPopup(popup_71951874a27fbabdcc986848464c9aa8)
+        ;
+
+        
+    
+    
+            marker_c9b8362eb3f049201deb9406655d3d54.bindTooltip(
+                `<div>
+                     Nanda Devi & Valley of Flowers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c9b8362eb3f049201deb9406655d3d54.setIcon(icon_828746476c35faca0922bcda83623277);
+            
+    
+            var marker_22a74241c0b79ec064de2d5fc832ec2f = L.marker(
+                [27.0023, 94.9487],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_9145daeb6bbb4ba793b1c96477d3e116 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8eb2e6c974a7e676800b19e27f9f1909 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a7da1bec8a6843985b8e2cb03e3e69f9 = $(`<div id="html_a7da1bec8a6843985b8e2cb03e3e69f9" style="width: 100.0%; height: 100.0%;"><b>Ahom Moidams at Charaideo</b><br>Type: Cultural</div>`)[0];
+                popup_8eb2e6c974a7e676800b19e27f9f1909.setContent(html_a7da1bec8a6843985b8e2cb03e3e69f9);
+            
+        
+
+        marker_22a74241c0b79ec064de2d5fc832ec2f.bindPopup(popup_8eb2e6c974a7e676800b19e27f9f1909)
+        ;
+
+        
+    
+    
+            marker_22a74241c0b79ec064de2d5fc832ec2f.bindTooltip(
+                `<div>
+                     Ahom Moidams at Charaideo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_22a74241c0b79ec064de2d5fc832ec2f.setIcon(icon_9145daeb6bbb4ba793b1c96477d3e116);
+            
+    
+            var marker_4bd2ca16b8e6df90448dd2defededb5f = L.marker(
+                [12.9116, 76.8979],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_0c681c377e95f326af1547f0c8ae30c3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c2a06d4d635f4bd595e27c4500228c22 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_20eb9528d72be7b61b00cae5a6a3bc68 = $(`<div id="html_20eb9528d72be7b61b00cae5a6a3bc68" style="width: 100.0%; height: 100.0%;"><b>Sacred Ensembles of the Hoysalas</b><br>Type: Cultural</div>`)[0];
+                popup_c2a06d4d635f4bd595e27c4500228c22.setContent(html_20eb9528d72be7b61b00cae5a6a3bc68);
+            
+        
+
+        marker_4bd2ca16b8e6df90448dd2defededb5f.bindPopup(popup_c2a06d4d635f4bd595e27c4500228c22)
+        ;
+
+        
+    
+    
+            marker_4bd2ca16b8e6df90448dd2defededb5f.bindTooltip(
+                `<div>
+                     Sacred Ensembles of the Hoysalas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4bd2ca16b8e6df90448dd2defededb5f.setIcon(icon_0c681c377e95f326af1547f0c8ae30c3);
+            
+    
+            var marker_3b03db863543f2ce6cb0c0efe644302c = L.marker(
+                [23.6795, 87.6856],
+                {
+}
+            ).addTo(marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa);
+        
+    
+            var icon_ddb2d00f205f444e50be0b7bad2c20ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f51ff7dd24f3c8972180181ec321d660 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5b2a51bb23b2a65b86eb5df8a74977e5 = $(`<div id="html_5b2a51bb23b2a65b86eb5df8a74977e5" style="width: 100.0%; height: 100.0%;"><b>Santiniketan</b><br>Type: Cultural</div>`)[0];
+                popup_f51ff7dd24f3c8972180181ec321d660.setContent(html_5b2a51bb23b2a65b86eb5df8a74977e5);
+            
+        
+
+        marker_3b03db863543f2ce6cb0c0efe644302c.bindPopup(popup_f51ff7dd24f3c8972180181ec321d660)
+        ;
+
+        
+    
+    
+            marker_3b03db863543f2ce6cb0c0efe644302c.bindTooltip(
+                `<div>
+                     Santiniketan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3b03db863543f2ce6cb0c0efe644302c.setIcon(icon_ddb2d00f205f444e50be0b7bad2c20ec);
+            
+    
+            marker_cluster_2073bd3aa3bbb70b468fa4fefd1ff4aa.addTo(map_40cb7556800541458d9bfa2d61a5b688);
+        
+</script>
+</html>

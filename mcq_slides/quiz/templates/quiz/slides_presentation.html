@@ -1,0 +1,116 @@
+{% extends 'quiz/base.html' %}
+
+{% block content %}
+<div class="reveal">
+    <div class="slides">
+        {% for mcq in mcqs %}
+        <section>
+            <h2>Question {{ forloop.counter }}</h2>
+            <p class="lead">{{ mcq.question }}</p>
+            
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, '{{ mcq.correct_answer }}')">
+                    a) {{ mcq.option_a }}
+                </div>
+                <div class="option" onclick="checkAnswer(this, '{{ mcq.correct_answer }}')">
+                    b) {{ mcq.option_b }}
+                </div>
+                <div class="option" onclick="checkAnswer(this, '{{ mcq.correct_answer }}')">
+                    c) {{ mcq.option_c }}
+                </div>
+                <div class="option" onclick="checkAnswer(this, '{{ mcq.correct_answer }}')">
+                    d) {{ mcq.option_d }}
+                </div>
+            </div>
+
+            <div class="explanation mt-4" style="display: none;">
+                <h5>Explanation:</h5>
+                <p>{{ mcq.explanation }}</p>
+            </div>
+        </section>
+        {% endfor %}
+    </div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/theme/white.css">
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.js"></script>
+<script>
+    Reveal.initialize({
+        hash: true,
+        slideNumber: true,
+        controls: true,
+        progress: true,
+        center: true,
+        transition: 'slide',
+        width: '100%',
+        height: '100%',
+        margin: 0.1,
+        minScale: 1,
+        maxScale: 1
+    });
+
+    function checkAnswer(element, correctAnswer) {
+        const options = element.parentElement.querySelectorAll('.option');
+        const explanation = element.parentElement.nextElementSibling;
+        
+        // Remove correct class from all options
+        options.forEach(opt => opt.classList.remove('correct'));
+        
+        // Add correct class to the selected option
+        element.classList.add('correct');
+        
+        // Show explanation
+        explanation.style.display = 'block';
+    }
+</script>
+
+<style>
+    .reveal {
+        background: #fff;
+    }
+    .reveal .slides {
+        text-align: left;
+    }
+    .reveal h2 {
+        color: #333;
+        margin-bottom: 30px;
+    }
+    .reveal .lead {
+        font-size: 1.5em;
+        margin-bottom: 30px;
+    }
+    .options {
+        margin-top: 20px;
+    }
+    .option {
+        padding: 15px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .option:hover {
+        background-color: #f8f9fa;
+        transform: translateX(10px);
+    }
+    .correct {
+        background-color: #d4edda;
+        border-color: #c3e6cb;
+    }
+    .explanation {
+        margin-top: 30px;
+        padding: 20px;
+        background-color: #f8f9fa;
+        border-radius: 5px;
+        border-left: 4px solid #28a745;
+    }
+    .reveal .controls {
+        color: #333;
+    }
+    .reveal .progress {
+        color: #28a745;
+    }
+</style>
+{% endblock %} 

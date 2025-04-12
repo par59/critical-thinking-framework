@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ce156fb7b4ce9ebb74d1e660128d591f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ce156fb7b4ce9ebb74d1e660128d591f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ce156fb7b4ce9ebb74d1e660128d591f = L.map(
+                "map_ce156fb7b4ce9ebb74d1e660128d591f",
+                {
+                    center: [20.5937, 78.9629],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_353b873d8e38a9e4379ab4aad6992ce3 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_353b873d8e38a9e4379ab4aad6992ce3.addTo(map_ce156fb7b4ce9ebb74d1e660128d591f);
+        
+    
+            var marker_cluster_966e66919e8e075e37b06020d86bf454 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_a8d7868b08e897bacb7111e530f3e908 = L.marker(
+                [11.7401, 92.6586],
+                {
+}
+            ).addTo(marker_cluster_966e66919e8e075e37b06020d86bf454);
+        
+    
+            var icon_541ce54592f3d4261cbd108d06d5f7ab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_848355f3a54e2da335c011bd4abacd26 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7218ad7370b1e8d26b9762720c2d3045 = $(`<div id="html_7218ad7370b1e8d26b9762720c2d3045" style="width: 100.0%; height: 100.0%;">     <b>Andaman and Nicobar Islands</b><br>     Capital: Port Blair<br>     Latitude: 11.7401<br>     Longitude: 92.6586<br>     Population: Around 380,000 people<br>     Area: 8,249 km²<br>     <br><b>History:</b> Andaman and Nicobar Islands were part of the British Empire as a penal colony for freedom fighters.<br>     <b>Culture:</b> The islands are known for their indigenous tribes and peaceful, scenic beaches.<br>     <b>Tourism:</b> Popular for water sports, scuba diving, and exploring the Cellular Jail.<br>     <b>Landmarks:</b> Cellular Jail, Radhanagar Beach     </div>`)[0];
+                popup_848355f3a54e2da335c011bd4abacd26.setContent(html_7218ad7370b1e8d26b9762720c2d3045);
+            
+        
+
+        marker_a8d7868b08e897bacb7111e530f3e908.bindPopup(popup_848355f3a54e2da335c011bd4abacd26)
+        ;
+
+        
+    
+    
+            marker_a8d7868b08e897bacb7111e530f3e908.bindTooltip(
+                `<div>
+                     Andaman and Nicobar Islands
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a8d7868b08e897bacb7111e530f3e908.setIcon(icon_541ce54592f3d4261cbd108d06d5f7ab);
+            
+    
+            var marker_393db6d07dbcf91337e76e554e642a35 = L.marker(
+                [30.7333, 76.7794],
+                {
+}
+            ).addTo(marker_cluster_966e66919e8e075e37b06020d86bf454);
+        
+    
+            var icon_26c9566cd62df89bffdfea057c6f9199 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e489b6fe04f86e406ebf58fe38bdc8ed = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e31d967d29b24e08a2b5a303185f45dc = $(`<div id="html_e31d967d29b24e08a2b5a303185f45dc" style="width: 100.0%; height: 100.0%;">     <b>Chandigarh</b><br>     Capital: Chandigarh<br>     Latitude: 30.7333<br>     Longitude: 76.7794<br>     Population: Around 1.1 million<br>     Area: 114 km²<br>     <br><b>History:</b> Chandigarh was designed by architect Pierre Jeanneret and Le Corbusier in the 1950s.<br>     <b>Culture:</b> Chandigarh is known for its modern architecture and the Rock Garden.<br>     <b>Tourism:</b> The Rose Garden and Sukhna Lake are must-visit spots.<br>     <b>Landmarks:</b> Rock Garden, Sukhna Lake     </div>`)[0];
+                popup_e489b6fe04f86e406ebf58fe38bdc8ed.setContent(html_e31d967d29b24e08a2b5a303185f45dc);
+            
+        
+
+        marker_393db6d07dbcf91337e76e554e642a35.bindPopup(popup_e489b6fe04f86e406ebf58fe38bdc8ed)
+        ;
+
+        
+    
+    
+            marker_393db6d07dbcf91337e76e554e642a35.bindTooltip(
+                `<div>
+                     Chandigarh
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_393db6d07dbcf91337e76e554e642a35.setIcon(icon_26c9566cd62df89bffdfea057c6f9199);
+            
+    
+            var marker_478d7b6ace0cbb0a6160fbc3b880288d = L.marker(
+                [20.3974, 72.8323],
+                {
+}
+            ).addTo(marker_cluster_966e66919e8e075e37b06020d86bf454);
+        
+    
+            var icon_c3ccb2106cc48c53a1c793ffc0857a9b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_416adfcf7b3f2fe5ad5363682e62b655 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e7f1b5e49ce94aeba1b47347fd17ec53 = $(`<div id="html_e7f1b5e49ce94aeba1b47347fd17ec53" style="width: 100.0%; height: 100.0%;">     <b>Dadra and Nagar Haveli and Daman and Diu</b><br>     Capital: Daman<br>     Latitude: 20.3974<br>     Longitude: 72.8323<br>     Population: Around 243,000<br>     Area: 603 km²<br>     <br><b>History:</b> It was under Portuguese colonial rule until 1961 when it was integrated into India.<br>     <b>Culture:</b> Known for its Portuguese heritage, churches, and beaches.<br>     <b>Tourism:</b> Daman is famous for its beaches and forts.<br>     <b>Landmarks:</b> Daman Fort, Jampore Beach     </div>`)[0];
+                popup_416adfcf7b3f2fe5ad5363682e62b655.setContent(html_e7f1b5e49ce94aeba1b47347fd17ec53);
+            
+        
+
+        marker_478d7b6ace0cbb0a6160fbc3b880288d.bindPopup(popup_416adfcf7b3f2fe5ad5363682e62b655)
+        ;
+
+        
+    
+    
+            marker_478d7b6ace0cbb0a6160fbc3b880288d.bindTooltip(
+                `<div>
+                     Dadra and Nagar Haveli and Daman and Diu
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_478d7b6ace0cbb0a6160fbc3b880288d.setIcon(icon_c3ccb2106cc48c53a1c793ffc0857a9b);
+            
+    
+            var marker_e28d905e5a110716128d20288ce537b0 = L.marker(
+                [10.5625, 72.6326],
+                {
+}
+            ).addTo(marker_cluster_966e66919e8e075e37b06020d86bf454);
+        
+    
+            var icon_b94ca3c6b8c143ff5cb4937493d58abd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5ece2a49f31094cd6f504329f6888a23 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_13151c0d7b93d89a3f3a0557da29a07e = $(`<div id="html_13151c0d7b93d89a3f3a0557da29a07e" style="width: 100.0%; height: 100.0%;">     <b>Lakshadweep</b><br>     Capital: Kavaratti<br>     Latitude: 10.5625<br>     Longitude: 72.6326<br>     Population: Around 70,000<br>     Area: 30 km²<br>     <br><b>History:</b> Lakshadweep was formerly known as the Laccadive Islands and was a strategic trade route.<br>     <b>Culture:</b> A blend of Malayali and Tamil cultures, with unique traditions and dance forms.<br>     <b>Tourism:</b> Famous for its pristine beaches and coral reefs.<br>     <b>Landmarks:</b> Agatti Island, Kalapathar Beach     </div>`)[0];
+                popup_5ece2a49f31094cd6f504329f6888a23.setContent(html_13151c0d7b93d89a3f3a0557da29a07e);
+            
+        
+
+        marker_e28d905e5a110716128d20288ce537b0.bindPopup(popup_5ece2a49f31094cd6f504329f6888a23)
+        ;
+
+        
+    
+    
+            marker_e28d905e5a110716128d20288ce537b0.bindTooltip(
+                `<div>
+                     Lakshadweep
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e28d905e5a110716128d20288ce537b0.setIcon(icon_b94ca3c6b8c143ff5cb4937493d58abd);
+            
+    
+            var marker_eec07560f9c5e505e0dd0355995956f1 = L.marker(
+                [28.6139, 77.209],
+                {
+}
+            ).addTo(marker_cluster_966e66919e8e075e37b06020d86bf454);
+        
+    
+            var icon_de5f270079a283049332b807bde8b4b8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6dc6d265a25f8f1fbbfb4cf43fb6fa77 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a36495a1bac454794eca12d4a16d0d51 = $(`<div id="html_a36495a1bac454794eca12d4a16d0d51" style="width: 100.0%; height: 100.0%;">     <b>Delhi</b><br>     Capital: New Delhi<br>     Latitude: 28.6139<br>     Longitude: 77.209<br>     Population: Around 19 million<br>     Area: 1,484 km²<br>     <br><b>History:</b> Delhi has been a historical city for centuries, serving as the capital of various empires.<br>     <b>Culture:</b> Known for its blend of modern and ancient culture, with diverse cuisines and historical sites.<br>     <b>Tourism:</b> India Gate, Qutub Minar, and Red Fort are popular landmarks.<br>     <b>Landmarks:</b> India Gate, Lotus Temple, Humayun's Tomb     </div>`)[0];
+                popup_6dc6d265a25f8f1fbbfb4cf43fb6fa77.setContent(html_a36495a1bac454794eca12d4a16d0d51);
+            
+        
+
+        marker_eec07560f9c5e505e0dd0355995956f1.bindPopup(popup_6dc6d265a25f8f1fbbfb4cf43fb6fa77)
+        ;
+
+        
+    
+    
+            marker_eec07560f9c5e505e0dd0355995956f1.bindTooltip(
+                `<div>
+                     Delhi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_eec07560f9c5e505e0dd0355995956f1.setIcon(icon_de5f270079a283049332b807bde8b4b8);
+            
+    
+            var marker_99b01eba1e09c13104ce22ffb7230578 = L.marker(
+                [11.9416, 79.8083],
+                {
+}
+            ).addTo(marker_cluster_966e66919e8e075e37b06020d86bf454);
+        
+    
+            var icon_f37ee9279e481d73b21d6607e56de2ae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d0212461692bf043cf393fb83161f4ac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_51d730ff771d16c375101aef5d636fbe = $(`<div id="html_51d730ff771d16c375101aef5d636fbe" style="width: 100.0%; height: 100.0%;">     <b>Puducherry</b><br>     Capital: Puducherry<br>     Latitude: 11.9416<br>     Longitude: 79.8083<br>     Population: Around 1.5 million<br>     Area: 492 km²<br>     <br><b>History:</b> Puducherry was a French colony until 1954 before being integrated into India.<br>     <b>Culture:</b> A fusion of French and Tamil culture, known for its serene beaches.<br>     <b>Tourism:</b> Promenade Beach, Auroville are notable attractions.<br>     <b>Landmarks:</b> Promenade Beach, Auroville, French Quarter     </div>`)[0];
+                popup_d0212461692bf043cf393fb83161f4ac.setContent(html_51d730ff771d16c375101aef5d636fbe);
+            
+        
+
+        marker_99b01eba1e09c13104ce22ffb7230578.bindPopup(popup_d0212461692bf043cf393fb83161f4ac)
+        ;
+
+        
+    
+    
+            marker_99b01eba1e09c13104ce22ffb7230578.bindTooltip(
+                `<div>
+                     Puducherry
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_99b01eba1e09c13104ce22ffb7230578.setIcon(icon_f37ee9279e481d73b21d6607e56de2ae);
+            
+    
+            var marker_3cb95e58f9d9aab3aa6947eb4b5bd5d1 = L.marker(
+                [34.1526, 77.577],
+                {
+}
+            ).addTo(marker_cluster_966e66919e8e075e37b06020d86bf454);
+        
+    
+            var icon_3f1c1b67cfb5536281ecedd997cc97f8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ea5e29ad39daf3da4cebad098563659b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fe99848e45e945c62e64de3c25991ae6 = $(`<div id="html_fe99848e45e945c62e64de3c25991ae6" style="width: 100.0%; height: 100.0%;">     <b>Ladakh</b><br>     Capital: Leh<br>     Latitude: 34.1526<br>     Longitude: 77.577<br>     Population: Around 290,000<br>     Area: 59,146 km²<br>     <br><b>History:</b> Ladakh was historically an important center of trade, culture, and Buddhism.<br>     <b>Culture:</b> Rich Tibetan culture and Buddhist monasteries.<br>     <b>Tourism:</b> Nubra Valley, Pangong Lake are top destinations.<br>     <b>Landmarks:</b> Pangong Lake, Thiksey Monastery     </div>`)[0];
+                popup_ea5e29ad39daf3da4cebad098563659b.setContent(html_fe99848e45e945c62e64de3c25991ae6);
+            
+        
+
+        marker_3cb95e58f9d9aab3aa6947eb4b5bd5d1.bindPopup(popup_ea5e29ad39daf3da4cebad098563659b)
+        ;
+
+        
+    
+    
+            marker_3cb95e58f9d9aab3aa6947eb4b5bd5d1.bindTooltip(
+                `<div>
+                     Ladakh
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3cb95e58f9d9aab3aa6947eb4b5bd5d1.setIcon(icon_3f1c1b67cfb5536281ecedd997cc97f8);
+            
+    
+            var marker_39c879388bb97fa2492c9376daca64f6 = L.marker(
+                [33.7782, 76.5762],
+                {
+}
+            ).addTo(marker_cluster_966e66919e8e075e37b06020d86bf454);
+        
+    
+            var icon_de8578e7a72aabf4bfcdfcc30305e6f6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ae896d21fe1cfada2a433491fa7846aa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aaeb156f2e89f0024019eb736c174cdf = $(`<div id="html_aaeb156f2e89f0024019eb736c174cdf" style="width: 100.0%; height: 100.0%;">     <b>Jammu & Kashmir</b><br>     Capital: Srinagar (summer), Jammu (winter)<br>     Latitude: 33.7782<br>     Longitude: 76.5762<br>     Population: Around 13 million<br>     Area: 55,538 km²<br>     <br><b>History:</b> Jammu and Kashmir has a long history of political and territorial disputes.<br>     <b>Culture:</b> A mix of Kashmiri, Dogra, and Ladakhi cultures.<br>     <b>Tourism:</b> Dal Lake, Vaishno Devi are major tourist destinations.<br>     <b>Landmarks:</b> Dal Lake, Vaishno Devi Temple, Mughal Gardens     </div>`)[0];
+                popup_ae896d21fe1cfada2a433491fa7846aa.setContent(html_aaeb156f2e89f0024019eb736c174cdf);
+            
+        
+
+        marker_39c879388bb97fa2492c9376daca64f6.bindPopup(popup_ae896d21fe1cfada2a433491fa7846aa)
+        ;
+
+        
+    
+    
+            marker_39c879388bb97fa2492c9376daca64f6.bindTooltip(
+                `<div>
+                     Jammu & Kashmir
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_39c879388bb97fa2492c9376daca64f6.setIcon(icon_de8578e7a72aabf4bfcdfcc30305e6f6);
+            
+    
+            marker_cluster_966e66919e8e075e37b06020d86bf454.addTo(map_ce156fb7b4ce9ebb74d1e660128d591f);
+        
+</script>
+</html>

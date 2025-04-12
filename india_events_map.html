@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_467f54d968c6882ea5b27c5ab9251a22 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_467f54d968c6882ea5b27c5ab9251a22" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_467f54d968c6882ea5b27c5ab9251a22 = L.map(
+                "map_467f54d968c6882ea5b27c5ab9251a22",
+                {
+                    center: [20.5937, 78.9629],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8296ea4003ee1286796f881dc2a2bb6c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_8296ea4003ee1286796f881dc2a2bb6c.addTo(map_467f54d968c6882ea5b27c5ab9251a22);
+        
+    
+            var marker_3c66604495da2b091151d736a9bf8507 = L.marker(
+                [29.9784, 73.017],
+                {
+}
+            ).addTo(map_467f54d968c6882ea5b27c5ab9251a22);
+        
+    
+            var icon_6682fede08ec89e3000037c5a62a9148 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5cc943ad821b653bd7511bdded72f7bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef4a7f15db2aa91cbb69955cf3f6f99c = $(`<div id="html_ef4a7f15db2aa91cbb69955cf3f6f99c" style="width: 100.0%; height: 100.0%;"><b>Indus Valley Civilization (2500)</b><br>Harappa and Mohenjo-Daro were major cities of the Indus Valley Civilization.</div>`)[0];
+                popup_5cc943ad821b653bd7511bdded72f7bc.setContent(html_ef4a7f15db2aa91cbb69955cf3f6f99c);
+            
+        
+
+        marker_3c66604495da2b091151d736a9bf8507.bindPopup(popup_5cc943ad821b653bd7511bdded72f7bc)
+        ;
+
+        
+    
+    
+                marker_3c66604495da2b091151d736a9bf8507.setIcon(icon_6682fede08ec89e3000037c5a62a9148);
+            
+    
+            var marker_94464abeb304d0012a0c39b6ac4fe301 = L.marker(
+                [25.6095, 85.1354],
+                {
+}
+            ).addTo(map_467f54d968c6882ea5b27c5ab9251a22);
+        
+    
+            var icon_a77ce1d253406b12237bab42de5e42b8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_994fac064946df2a25b89488221fc97f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a4a1c1f8773fa48c750626ae0a9e9f2e = $(`<div id="html_a4a1c1f8773fa48c750626ae0a9e9f2e" style="width: 100.0%; height: 100.0%;"><b>Maurya Empire (Ashoka) (322)</b><br>The Mauryan Empire, founded by Chandragupta Maurya, reached its peak under Ashoka.</div>`)[0];
+                popup_994fac064946df2a25b89488221fc97f.setContent(html_a4a1c1f8773fa48c750626ae0a9e9f2e);
+            
+        
+
+        marker_94464abeb304d0012a0c39b6ac4fe301.bindPopup(popup_994fac064946df2a25b89488221fc97f)
+        ;
+
+        
+    
+    
+                marker_94464abeb304d0012a0c39b6ac4fe301.setIcon(icon_a77ce1d253406b12237bab42de5e42b8);
+            
+    
+            var marker_0469e2e7d926b3c7b4901cd8132b980f = L.marker(
+                [25.5941, 85.1376],
+                {
+}
+            ).addTo(map_467f54d968c6882ea5b27c5ab9251a22);
+        
+    
+            var icon_2070f3b9a507b699f552db5d4ce972ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_512f9cf1e22feb877f4f37a16aca20d8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1b0650eebfff45da77e5557af5b78847 = $(`<div id="html_1b0650eebfff45da77e5557af5b78847" style="width: 100.0%; height: 100.0%;"><b>Gupta Empire (320)</b><br>The Gupta Empire is known for a golden age of culture and science in India.</div>`)[0];
+                popup_512f9cf1e22feb877f4f37a16aca20d8.setContent(html_1b0650eebfff45da77e5557af5b78847);
+            
+        
+
+        marker_0469e2e7d926b3c7b4901cd8132b980f.bindPopup(popup_512f9cf1e22feb877f4f37a16aca20d8)
+        ;
+
+        
+    
+    
+                marker_0469e2e7d926b3c7b4901cd8132b980f.setIcon(icon_2070f3b9a507b699f552db5d4ce972ef);
+            
+    
+            var marker_cd61b3225ccb37539072f7fef14f9e3e = L.marker(
+                [34.7282, 73.4244],
+                {
+}
+            ).addTo(map_467f54d968c6882ea5b27c5ab9251a22);
+        
+    
+            var icon_f88bfa41bd2da7c35fbd3326779977a0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b6993789f2b3f64da16f38315c0a3bd2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d72ffa7a3b8f08085b5b27702dfb3c49 = $(`<div id="html_d72ffa7a3b8f08085b5b27702dfb3c49" style="width: 100.0%; height: 100.0%;"><b>Invasion of Alexander the Great (326)</b><br>Alexander fought the Battle of the Hydaspes River near modern-day Jhelum.</div>`)[0];
+                popup_b6993789f2b3f64da16f38315c0a3bd2.setContent(html_d72ffa7a3b8f08085b5b27702dfb3c49);
+            
+        
+
+        marker_cd61b3225ccb37539072f7fef14f9e3e.bindPopup(popup_b6993789f2b3f64da16f38315c0a3bd2)
+        ;
+
+        
+    
+    
+                marker_cd61b3225ccb37539072f7fef14f9e3e.setIcon(icon_f88bfa41bd2da7c35fbd3326779977a0);
+            
+    
+            var marker_39e01b7111821b5d48befba6888058e1 = L.marker(
+                [25.3965, 68.3578],
+                {
+}
+            ).addTo(map_467f54d968c6882ea5b27c5ab9251a22);
+        
+    
+            var icon_8d5bb80b35726ac7873336f8e182e541 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3d39c64e7f3dc75022a2d2bde9d10bc2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cff8e4a8fd9dd8cd05a24298b02f3d20 = $(`<div id="html_cff8e4a8fd9dd8cd05a24298b02f3d20" style="width: 100.0%; height: 100.0%;"><b>Arrival of Islam (Muhammad bin Qasim) (711)</b><br>The Umayyad Caliphate's invasion and establishment of Islamic rule in Sindh.</div>`)[0];
+                popup_3d39c64e7f3dc75022a2d2bde9d10bc2.setContent(html_cff8e4a8fd9dd8cd05a24298b02f3d20);
+            
+        
+
+        marker_39e01b7111821b5d48befba6888058e1.bindPopup(popup_3d39c64e7f3dc75022a2d2bde9d10bc2)
+        ;
+
+        
+    
+    
+                marker_39e01b7111821b5d48befba6888058e1.setIcon(icon_8d5bb80b35726ac7873336f8e182e541);
+            
+    
+            var marker_a67f789fb5ba159f3ba43151d3054faf = L.marker(
+                [28.6139, 77.209],
+                {
+}
+            ).addTo(map_467f54d968c6882ea5b27c5ab9251a22);
+        
+    
+            var icon_ff388e00ae31663dc0e8ba35691c03a7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_403a5d687ed5a91e449a524368eaef23 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8ed9b2af58262eefd978ea4f7a4f1091 = $(`<div id="html_8ed9b2af58262eefd978ea4f7a4f1091" style="width: 100.0%; height: 100.0%;"><b>Delhi Sultanate (1206)</b><br>Islamic rule established in India, starting with Qutb-ud-din Aibak.</div>`)[0];
+                popup_403a5d687ed5a91e449a524368eaef23.setContent(html_8ed9b2af58262eefd978ea4f7a4f1091);
+            
+        
+
+        marker_a67f789fb5ba159f3ba43151d3054faf.bindPopup(popup_403a5d687ed5a91e449a524368eaef23)
+        ;
+
+        
+    
+    
+                marker_a67f789fb5ba159f3ba43151d3054faf.setIcon(icon_ff388e00ae31663dc0e8ba35691c03a7);
+            
+    
+            var marker_908638d7891740346ba78a3e36790f4a = L.marker(
+                [28.6139, 77.209],
+                {
+}
+            ).addTo(map_467f54d968c6882ea5b27c5ab9251a22);
+        
+    
+            var icon_3fe4f29b46c35ab6fa2282271540bfb1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_411237a837bab7c7dc70fbe35275eeb7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_53d968dabdf2bcbaa21137d1901ee586 = $(`<div id="html_53d968dabdf2bcbaa21137d1901ee586" style="width: 100.0%; height: 100.0%;"><b>Mughal Empire Founded (1526)</b><br>The Mughal Empire was founded by Babur after the Battle of Panipat.</div>`)[0];
+                popup_411237a837bab7c7dc70fbe35275eeb7.setContent(html_53d968dabdf2bcbaa21137d1901ee586);
+            
+        
+
+        marker_908638d7891740346ba78a3e36790f4a.bindPopup(popup_411237a837bab7c7dc70fbe35275eeb7)
+        ;
+
+        
+    
+    
+                marker_908638d7891740346ba78a3e36790f4a.setIcon(icon_3fe4f29b46c35ab6fa2282271540bfb1);
+            
+    
+            var marker_76ff1d97db2fa9c929718157e2ca8f5d = L.marker(
+                [22.95, 88.25],
+                {
+}
+            ).addTo(map_467f54d968c6882ea5b27c5ab9251a22);
+        
+    
+            var icon_f8caaeef0274e0ccc5968a42bba30af3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e1d821ba8e5b1b4f82114cab1784fe85 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aec35f82009ecd3a6376c1183791d0e4 = $(`<div id="html_aec35f82009ecd3a6376c1183791d0e4" style="width: 100.0%; height: 100.0%;"><b>Battle of Plassey (1757)</b><br>The British East India Company defeats the Nawab of Bengal, gaining control over Bengal.</div>`)[0];
+                popup_e1d821ba8e5b1b4f82114cab1784fe85.setContent(html_aec35f82009ecd3a6376c1183791d0e4);
+            
+        
+
+        marker_76ff1d97db2fa9c929718157e2ca8f5d.bindPopup(popup_e1d821ba8e5b1b4f82114cab1784fe85)
+        ;
+
+        
+    
+    
+                marker_76ff1d97db2fa9c929718157e2ca8f5d.setIcon(icon_f8caaeef0274e0ccc5968a42bba30af3);
+            
+    
+            var marker_9cd18ab9b1ffe9621597a9ab357f1f41 = L.marker(
+                [28.6139, 77.209],
+                {
+}
+            ).addTo(map_467f54d968c6882ea5b27c5ab9251a22);
+        
+    
+            var icon_a2782b0ba81dc69206e08a7b376cc58e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a50813004208a777c3193fbb7233e0d2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ee16b2b973272058fb5b04ae1b17031 = $(`<div id="html_5ee16b2b973272058fb5b04ae1b17031" style="width: 100.0%; height: 100.0%;"><b>Indian Rebellion of 1857 (1857)</b><br>The first major rebellion against British colonial rule, also known as the First War of Independence.</div>`)[0];
+                popup_a50813004208a777c3193fbb7233e0d2.setContent(html_5ee16b2b973272058fb5b04ae1b17031);
+            
+        
+
+        marker_9cd18ab9b1ffe9621597a9ab357f1f41.bindPopup(popup_a50813004208a777c3193fbb7233e0d2)
+        ;
+
+        
+    
+    
+                marker_9cd18ab9b1ffe9621597a9ab357f1f41.setIcon(icon_a2782b0ba81dc69206e08a7b376cc58e);
+            
+    
+            var marker_472a7bdbd286c65bf5b0d5d264c4a44a = L.marker(
+                [28.6139, 77.209],
+                {
+}
+            ).addTo(map_467f54d968c6882ea5b27c5ab9251a22);
+        
+    
+            var icon_9ae2aadfdbc134d0398445b901394c3c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8f1861ac3d9dfadec46db78c1df049d5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b35dcdcd72a2228b1377232914fffb86 = $(`<div id="html_b35dcdcd72a2228b1377232914fffb86" style="width: 100.0%; height: 100.0%;"><b>Partition of India (1947)</b><br>India and Pakistan were divided into two separate nations.</div>`)[0];
+                popup_8f1861ac3d9dfadec46db78c1df049d5.setContent(html_b35dcdcd72a2228b1377232914fffb86);
+            
+        
+
+        marker_472a7bdbd286c65bf5b0d5d264c4a44a.bindPopup(popup_8f1861ac3d9dfadec46db78c1df049d5)
+        ;
+
+        
+    
+    
+                marker_472a7bdbd286c65bf5b0d5d264c4a44a.setIcon(icon_9ae2aadfdbc134d0398445b901394c3c);
+            
+    
+            var marker_a7c0cbbca803e91498d07256371589d3 = L.marker(
+                [28.6139, 77.209],
+                {
+}
+            ).addTo(map_467f54d968c6882ea5b27c5ab9251a22);
+        
+    
+            var icon_2dd8eba5a2ce871f1a3e45727a04c257 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a7c018a2b385b2036a6f6035be99cb3d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56ce41d06d28c7d85a4a39f91bece2ea = $(`<div id="html_56ce41d06d28c7d85a4a39f91bece2ea" style="width: 100.0%; height: 100.0%;"><b>Independence of India (1947)</b><br>India gained independence from British colonial rule.</div>`)[0];
+                popup_a7c018a2b385b2036a6f6035be99cb3d.setContent(html_56ce41d06d28c7d85a4a39f91bece2ea);
+            
+        
+
+        marker_a7c0cbbca803e91498d07256371589d3.bindPopup(popup_a7c018a2b385b2036a6f6035be99cb3d)
+        ;
+
+        
+    
+    
+                marker_a7c0cbbca803e91498d07256371589d3.setIcon(icon_2dd8eba5a2ce871f1a3e45727a04c257);
+            
+    
+            var marker_ab693e7a68b8a3a95ee5f4b95aa22e16 = L.marker(
+                [28.6139, 77.209],
+                {
+}
+            ).addTo(map_467f54d968c6882ea5b27c5ab9251a22);
+        
+    
+            var icon_40f5304207e2b39386822e7a1c71d420 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6b4d875937358ec39e3618b31ed49be3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_00c981ac32b4e6af1785b5e411362942 = $(`<div id="html_00c981ac32b4e6af1785b5e411362942" style="width: 100.0%; height: 100.0%;"><b>Indian Republic (1950)</b><br>India adopted its constitution and became a republic.</div>`)[0];
+                popup_6b4d875937358ec39e3618b31ed49be3.setContent(html_00c981ac32b4e6af1785b5e411362942);
+            
+        
+
+        marker_ab693e7a68b8a3a95ee5f4b95aa22e16.bindPopup(popup_6b4d875937358ec39e3618b31ed49be3)
+        ;
+
+        
+    
+    
+                marker_ab693e7a68b8a3a95ee5f4b95aa22e16.setIcon(icon_40f5304207e2b39386822e7a1c71d420);
+            
+    
+            var marker_a18085d8eaac37e5d498ccf7bf872ce1 = L.marker(
+                [28.7041, 77.1025],
+                {
+}
+            ).addTo(map_467f54d968c6882ea5b27c5ab9251a22);
+        
+    
+            var icon_e67c56cdaa0e9badbbf807ceec28a2ad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9fa168f662dc0bf258585abbcf3d0be5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2a4f750daa1b69a07764a6950e9ea55a = $(`<div id="html_2a4f750daa1b69a07764a6950e9ea55a" style="width: 100.0%; height: 100.0%;"><b>Green Revolution (1960)</b><br>Agricultural transformation that made India self-sufficient in food production.</div>`)[0];
+                popup_9fa168f662dc0bf258585abbcf3d0be5.setContent(html_2a4f750daa1b69a07764a6950e9ea55a);
+            
+        
+
+        marker_a18085d8eaac37e5d498ccf7bf872ce1.bindPopup(popup_9fa168f662dc0bf258585abbcf3d0be5)
+        ;
+
+        
+    
+    
+                marker_a18085d8eaac37e5d498ccf7bf872ce1.setIcon(icon_e67c56cdaa0e9badbbf807ceec28a2ad);
+            
+    
+            var marker_05f30fd072d2cf3f5c6024f606484c6c = L.marker(
+                [27.0238, 71.6143],
+                {
+}
+            ).addTo(map_467f54d968c6882ea5b27c5ab9251a22);
+        
+    
+            var icon_df4ebc0ea2e95e74bdbec7bb2710faf4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c09bfd89122141eda13860b6d01f1b60 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b2b8abb24b1a4ddc4d7569db3c8af484 = $(`<div id="html_b2b8abb24b1a4ddc4d7569db3c8af484" style="width: 100.0%; height: 100.0%;"><b>Pokhran Nuclear Tests (1974)</b><br>India conducted its first successful nuclear test at Pokhran.</div>`)[0];
+                popup_c09bfd89122141eda13860b6d01f1b60.setContent(html_b2b8abb24b1a4ddc4d7569db3c8af484);
+            
+        
+
+        marker_05f30fd072d2cf3f5c6024f606484c6c.bindPopup(popup_c09bfd89122141eda13860b6d01f1b60)
+        ;
+
+        
+    
+    
+                marker_05f30fd072d2cf3f5c6024f606484c6c.setIcon(icon_df4ebc0ea2e95e74bdbec7bb2710faf4);
+            
+    
+            var marker_85689c5578378055db2ce1c042d45cfb = L.marker(
+                [28.6139, 77.209],
+                {
+}
+            ).addTo(map_467f54d968c6882ea5b27c5ab9251a22);
+        
+    
+            var icon_4f233f2fc932ef0faa4d1c2844b795bc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8ce632bb1acf53fee96274067aded332 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4e9092f6082e63fa6658c72048464f23 = $(`<div id="html_4e9092f6082e63fa6658c72048464f23" style="width: 100.0%; height: 100.0%;"><b>Assassination of Indira Gandhi (1984)</b><br>Indian Prime Minister Indira Gandhi was assassinated by her bodyguards.</div>`)[0];
+                popup_8ce632bb1acf53fee96274067aded332.setContent(html_4e9092f6082e63fa6658c72048464f23);
+            
+        
+
+        marker_85689c5578378055db2ce1c042d45cfb.bindPopup(popup_8ce632bb1acf53fee96274067aded332)
+        ;
+
+        
+    
+    
+                marker_85689c5578378055db2ce1c042d45cfb.setIcon(icon_4f233f2fc932ef0faa4d1c2844b795bc);
+            
+    
+            var marker_48d2b5bc634c94500a8fe98013d9ef53 = L.marker(
+                [28.7041, 77.1025],
+                {
+}
+            ).addTo(map_467f54d968c6882ea5b27c5ab9251a22);
+        
+    
+            var icon_bcb22c19e04dae0c2dd48b0debc90635 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4d9e7f9fa59fb5d42bdf087cb9990b42 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_31b3d1993e5a7bacd71fd3e25acad7ff = $(`<div id="html_31b3d1993e5a7bacd71fd3e25acad7ff" style="width: 100.0%; height: 100.0%;"><b>Economic Liberalization (1991)</b><br>India embarked on major economic reforms and liberalization.</div>`)[0];
+                popup_4d9e7f9fa59fb5d42bdf087cb9990b42.setContent(html_31b3d1993e5a7bacd71fd3e25acad7ff);
+            
+        
+
+        marker_48d2b5bc634c94500a8fe98013d9ef53.bindPopup(popup_4d9e7f9fa59fb5d42bdf087cb9990b42)
+        ;
+
+        
+    
+    
+                marker_48d2b5bc634c94500a8fe98013d9ef53.setIcon(icon_bcb22c19e04dae0c2dd48b0debc90635);
+            
+    
+            var marker_2beef6e7a0010eae750cd1811e435337 = L.marker(
+                [34.5906, 77.3494],
+                {
+}
+            ).addTo(map_467f54d968c6882ea5b27c5ab9251a22);
+        
+    
+            var icon_2105a96f58ef79e2f571f8b25a2dd264 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7cb28766ed8b1ac1f268446d17fee6f5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9e4460b66f1ce23e607e29eb67999d15 = $(`<div id="html_9e4460b66f1ce23e607e29eb67999d15" style="width: 100.0%; height: 100.0%;"><b>Kargil War (1999)</b><br>Conflict between India and Pakistan in the Kargil region.</div>`)[0];
+                popup_7cb28766ed8b1ac1f268446d17fee6f5.setContent(html_9e4460b66f1ce23e607e29eb67999d15);
+            
+        
+
+        marker_2beef6e7a0010eae750cd1811e435337.bindPopup(popup_7cb28766ed8b1ac1f268446d17fee6f5)
+        ;
+
+        
+    
+    
+                marker_2beef6e7a0010eae750cd1811e435337.setIcon(icon_2105a96f58ef79e2f571f8b25a2dd264);
+            
+    
+            var marker_0a4598d15a93e8b8eafcadcbd60f3df8 = L.marker(
+                [13.0827, 80.2707],
+                {
+}
+            ).addTo(map_467f54d968c6882ea5b27c5ab9251a22);
+        
+    
+            var icon_8a0ced442a99627f43ffef8db9802c70 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7a75650ff6dfce0e2942690b4a971026 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_98abd60721470bbaf11a44f5b2be4df1 = $(`<div id="html_98abd60721470bbaf11a44f5b2be4df1" style="width: 100.0%; height: 100.0%;"><b>Chandrayaan-1 Mission (2008)</b><br>India launched its first mission to the Moon.</div>`)[0];
+                popup_7a75650ff6dfce0e2942690b4a971026.setContent(html_98abd60721470bbaf11a44f5b2be4df1);
+            
+        
+
+        marker_0a4598d15a93e8b8eafcadcbd60f3df8.bindPopup(popup_7a75650ff6dfce0e2942690b4a971026)
+        ;
+
+        
+    
+    
+                marker_0a4598d15a93e8b8eafcadcbd60f3df8.setIcon(icon_8a0ced442a99627f43ffef8db9802c70);
+            
+    
+            var marker_8666b907be358646fd8393b30ae1b1f1 = L.marker(
+                [13.0827, 80.2707],
+                {
+}
+            ).addTo(map_467f54d968c6882ea5b27c5ab9251a22);
+        
+    
+            var icon_d45a7aef1e7dbd3dc4ab616ffc65fae5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4ced3097b31013588f49fb49db891ad2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_86eef23ef241dc51cdbb9583214b3b6f = $(`<div id="html_86eef23ef241dc51cdbb9583214b3b6f" style="width: 100.0%; height: 100.0%;"><b>Mars Orbiter Mission (2013)</b><br>India successfully placed a satellite into Mars' orbit.</div>`)[0];
+                popup_4ced3097b31013588f49fb49db891ad2.setContent(html_86eef23ef241dc51cdbb9583214b3b6f);
+            
+        
+
+        marker_8666b907be358646fd8393b30ae1b1f1.bindPopup(popup_4ced3097b31013588f49fb49db891ad2)
+        ;
+
+        
+    
+    
+                marker_8666b907be358646fd8393b30ae1b1f1.setIcon(icon_d45a7aef1e7dbd3dc4ab616ffc65fae5);
+            
+    
+            var marker_20ab1c201b09dac719e14ac32297f2a9 = L.marker(
+                [28.6139, 77.209],
+                {
+}
+            ).addTo(map_467f54d968c6882ea5b27c5ab9251a22);
+        
+    
+            var icon_0a2f841c50c556b2ad76145da6db7430 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9c1609d541fc154be0b2fa9e6f11b187 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9b346fb9616aac8b68121229f2e14184 = $(`<div id="html_9b346fb9616aac8b68121229f2e14184" style="width: 100.0%; height: 100.0%;"><b>COVID-19 Pandemic (2020)</b><br>India was heavily impacted by the global COVID-19 pandemic.</div>`)[0];
+                popup_9c1609d541fc154be0b2fa9e6f11b187.setContent(html_9b346fb9616aac8b68121229f2e14184);
+            
+        
+
+        marker_20ab1c201b09dac719e14ac32297f2a9.bindPopup(popup_9c1609d541fc154be0b2fa9e6f11b187)
+        ;
+
+        
+    
+    
+                marker_20ab1c201b09dac719e14ac32297f2a9.setIcon(icon_0a2f841c50c556b2ad76145da6db7430);
+            
+</script>
+</html>

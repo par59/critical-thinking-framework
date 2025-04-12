@@ -1,0 +1,26 @@
+digraph "Cybersecurity Process Flow" {
+	graph [fontcolor="#2D3436" fontname="Sans-Serif" fontsize=15 label="Cybersecurity Process Flow" nodesep=0.8 pad=2.0 rankdir=TB ranksep=0.75 splines=ortho]
+	node [fixedsize=true fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13 height=1.4 imagescale=true labelloc=b shape=box style=rounded width=1.4]
+	edge [color="#7B8894"]
+	"75e7eb70c1b743e5a1e2d51554c344b2" [label=Users height=1.9 image="C:\Users\paria\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\resources/onprem/client\client.png" shape=none]
+	subgraph "cluster_Security Layer" {
+		graph [bgcolor="#E5F5FD" fontname="Sans-Serif" fontsize=12 label="Security Layer" labeljust=l pencolor="#AEB6BE" rankdir=LR shape=box style=rounded]
+		beae40c3b2db445393d2f70caacaf416 [label=Firewall height=1.9 image="C:\Users\paria\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\resources/onprem/network\internet.png" shape=none]
+		"89004c29c7324e12828c7b9d442f5613" [label=Authentication height=1.9 image="C:\Users\paria\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\resources/onprem/security\vault.png" shape=none]
+		"27439a63097f46e2914ed679258631b1" [label="Security Monitoring" height=1.9 image="C:\Users\paria\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\resources/onprem/monitoring\grafana.png" shape=none]
+	}
+	subgraph "cluster_Protected Resources" {
+		graph [bgcolor="#E5F5FD" fontname="Sans-Serif" fontsize=12 label="Protected Resources" labeljust=l pencolor="#AEB6BE" rankdir=LR shape=box style=rounded]
+		"828a44aef3674308ac1c934a9891023e" [label="Web Services" height=1.9 image="C:\Users\paria\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\resources/onprem/network\apache.png" shape=none]
+		"4d04e276d8f94309b9dbad8bba5db11b" [label="Data Storage" height=1.9 image="C:\Users\paria\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\resources/onprem/database\postgresql.png" shape=none]
+	}
+	"75e7eb70c1b743e5a1e2d51554c344b2" -> beae40c3b2db445393d2f70caacaf416 [label="1. Access Request" dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	beae40c3b2db445393d2f70caacaf416 -> "89004c29c7324e12828c7b9d442f5613" [label="2. Filter" dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	"89004c29c7324e12828c7b9d442f5613" -> "828a44aef3674308ac1c934a9891023e" [label="3. Verify" dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	"828a44aef3674308ac1c934a9891023e" -> "4d04e276d8f94309b9dbad8bba5db11b" [label="4. Query" dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	"27439a63097f46e2914ed679258631b1" -> beae40c3b2db445393d2f70caacaf416 [label=Monitor dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	"27439a63097f46e2914ed679258631b1" -> "89004c29c7324e12828c7b9d442f5613" [label=Monitor dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	"27439a63097f46e2914ed679258631b1" -> "828a44aef3674308ac1c934a9891023e" [label=Monitor dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	"27439a63097f46e2914ed679258631b1" -> "4d04e276d8f94309b9dbad8bba5db11b" [label=Monitor dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	"27439a63097f46e2914ed679258631b1" -> "75e7eb70c1b743e5a1e2d51554c344b2" [label=Alert dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13 style=dashed]
+}

@@ -1,0 +1,23 @@
+// Scrum Process Flow
+digraph {
+	A [label=Start]
+	B [label="Product Backlog"]
+	C [label="Sprint Planning"]
+	D [label="Sprint Backlog"]
+	E [label="Daily Scrum"]
+	F [label="Sprint Execution"]
+	G [label="Review & Retrospective"]
+	H [label="Deliver Increment"]
+	I [label=Improvements]
+	Z [label=End]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+	E -> F
+	F -> G
+	G -> H [label=Yes]
+	G -> I [label=No]
+	H -> Z
+	I -> Z
+}

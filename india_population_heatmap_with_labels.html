@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_05e90f3e46d49b26be6e88c57ce55c5c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_05e90f3e46d49b26be6e88c57ce55c5c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_05e90f3e46d49b26be6e88c57ce55c5c = L.map(
+                "map_05e90f3e46d49b26be6e88c57ce55c5c",
+                {
+                    center: [20.5937, 78.9629],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_286851f0ee87f014a7acfec075551126 = L.tileLayer(
+                "Stamen Terrain",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under ODbL.",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_286851f0ee87f014a7acfec075551126.addTo(map_05e90f3e46d49b26be6e88c57ce55c5c);
+        
+    
+            var heat_map_ca6d9fb13460840706da21899c05ac60 = L.heatLayer(
+                [[26.8467, 80.9462, 199812341], [19.7515, 75.7139, 112374333], [25.0961, 85.3131, 104099452], [22.9868, 87.855, 91276115], [23.4733, 78.6569, 72626809], [11.1271, 78.6569, 72147030], [27.0238, 74.2179, 68548437], [15.3173, 75.7139, 61095297], [22.2587, 71.1924, 60439692], [15.9129, 79.74, 49577103]],
+                {
+  "minOpacity": 0.2,
+  "maxZoom": 1,
+  "radius": 15,
+  "blur": 15,
+}
+            );
+        
+    
+            heat_map_ca6d9fb13460840706da21899c05ac60.addTo(map_05e90f3e46d49b26be6e88c57ce55c5c);
+        
+    
+            var circle_marker_9446d5677cae0c97b4870d738f81deba = L.circleMarker(
+                [26.8467, 80.9462],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24.9812341, "stroke": true, "weight": 3}
+            ).addTo(map_05e90f3e46d49b26be6e88c57ce55c5c);
+        
+    
+        var popup_df6e135e4aa5fb1b0e54b32c400d3a19 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_952bcfc1dba97ff5b9eb310fab67fca7 = $(`<div id="html_952bcfc1dba97ff5b9eb310fab67fca7" style="width: 100.0%; height: 100.0%;">1. Uttar Pradesh: 199,812,341</div>`)[0];
+                popup_df6e135e4aa5fb1b0e54b32c400d3a19.setContent(html_952bcfc1dba97ff5b9eb310fab67fca7);
+            
+        
+
+        circle_marker_9446d5677cae0c97b4870d738f81deba.bindPopup(popup_df6e135e4aa5fb1b0e54b32c400d3a19)
+        ;
+
+        
+    
+    
+            var marker_f0dd79ee935ad475120be4f21bc64009 = L.marker(
+                [26.8467, 80.9462],
+                {
+}
+            ).addTo(map_05e90f3e46d49b26be6e88c57ce55c5c);
+        
+    
+            var div_icon_8351c3d2a762ea80fa5d45e73318497d = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: black; padding: 2px; border-radius: 3px;\"\u003e1\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_f0dd79ee935ad475120be4f21bc64009.setIcon(div_icon_8351c3d2a762ea80fa5d45e73318497d);
+        
+    
+                marker_f0dd79ee935ad475120be4f21bc64009.setIcon(div_icon_8351c3d2a762ea80fa5d45e73318497d);
+            
+    
+            var circle_marker_aa0a89c1d5bf05c39a90e50122e0d0b1 = L.circleMarker(
+                [19.7515, 75.7139],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.2374333, "stroke": true, "weight": 3}
+            ).addTo(map_05e90f3e46d49b26be6e88c57ce55c5c);
+        
+    
+        var popup_dbdd0a0301e3648d4df551037431dd24 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4d510f61bdd9311a6c8ae084e9c5c863 = $(`<div id="html_4d510f61bdd9311a6c8ae084e9c5c863" style="width: 100.0%; height: 100.0%;">2. Maharashtra: 112,374,333</div>`)[0];
+                popup_dbdd0a0301e3648d4df551037431dd24.setContent(html_4d510f61bdd9311a6c8ae084e9c5c863);
+            
+        
+
+        circle_marker_aa0a89c1d5bf05c39a90e50122e0d0b1.bindPopup(popup_dbdd0a0301e3648d4df551037431dd24)
+        ;
+
+        
+    
+    
+            var marker_b0f17aa1780bbd6bba1b057abb387bbc = L.marker(
+                [19.7515, 75.7139],
+                {
+}
+            ).addTo(map_05e90f3e46d49b26be6e88c57ce55c5c);
+        
+    
+            var div_icon_cdff922a1038b772bc00bbc38f4bc879 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: black; padding: 2px; border-radius: 3px;\"\u003e2\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_b0f17aa1780bbd6bba1b057abb387bbc.setIcon(div_icon_cdff922a1038b772bc00bbc38f4bc879);
+        
+    
+                marker_b0f17aa1780bbd6bba1b057abb387bbc.setIcon(div_icon_cdff922a1038b772bc00bbc38f4bc879);
+            
+    
+            var circle_marker_0a393fea23120efaf93ccaf503e424df = L.circleMarker(
+                [25.0961, 85.3131],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.4099452, "stroke": true, "weight": 3}
+            ).addTo(map_05e90f3e46d49b26be6e88c57ce55c5c);
+        
+    
+        var popup_b671786c1bbbdf76e09a861ae8762be5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_62db9eb9a343bb61a409bf1e6ae8455d = $(`<div id="html_62db9eb9a343bb61a409bf1e6ae8455d" style="width: 100.0%; height: 100.0%;">3. Bihar: 104,099,452</div>`)[0];
+                popup_b671786c1bbbdf76e09a861ae8762be5.setContent(html_62db9eb9a343bb61a409bf1e6ae8455d);
+            
+        
+
+        circle_marker_0a393fea23120efaf93ccaf503e424df.bindPopup(popup_b671786c1bbbdf76e09a861ae8762be5)
+        ;
+
+        
+    
+    
+            var marker_e36352c0bb71f2a57e10214ce7181b22 = L.marker(
+                [25.0961, 85.3131],
+                {
+}
+            ).addTo(map_05e90f3e46d49b26be6e88c57ce55c5c);
+        
+    
+            var div_icon_e64a614e8f5d9642f92ef8a4c110ddcf = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: black; padding: 2px; border-radius: 3px;\"\u003e3\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_e36352c0bb71f2a57e10214ce7181b22.setIcon(div_icon_e64a614e8f5d9642f92ef8a4c110ddcf);
+        
+    
+                marker_e36352c0bb71f2a57e10214ce7181b22.setIcon(div_icon_e64a614e8f5d9642f92ef8a4c110ddcf);
+            
+    
+            var circle_marker_8b378c6d6ea8d08d8454ac7579e5508d = L.circleMarker(
+                [22.9868, 87.855],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.1276115, "stroke": true, "weight": 3}
+            ).addTo(map_05e90f3e46d49b26be6e88c57ce55c5c);
+        
+    
+        var popup_1b85570cfe03589dda20b9a34993aad8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c197534048b1bb6f14d87698a4833533 = $(`<div id="html_c197534048b1bb6f14d87698a4833533" style="width: 100.0%; height: 100.0%;">4. West Bengal: 91,276,115</div>`)[0];
+                popup_1b85570cfe03589dda20b9a34993aad8.setContent(html_c197534048b1bb6f14d87698a4833533);
+            
+        
+
+        circle_marker_8b378c6d6ea8d08d8454ac7579e5508d.bindPopup(popup_1b85570cfe03589dda20b9a34993aad8)
+        ;
+
+        
+    
+    
+            var marker_d643aefff72b81b6a7adf97cf203b94d = L.marker(
+                [22.9868, 87.855],
+                {
+}
+            ).addTo(map_05e90f3e46d49b26be6e88c57ce55c5c);
+        
+    
+            var div_icon_6b46897b536ef691cf058051239106be = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: black; padding: 2px; border-radius: 3px;\"\u003e4\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_d643aefff72b81b6a7adf97cf203b94d.setIcon(div_icon_6b46897b536ef691cf058051239106be);
+        
+    
+                marker_d643aefff72b81b6a7adf97cf203b94d.setIcon(div_icon_6b46897b536ef691cf058051239106be);
+            
+    
+            var circle_marker_9baf71198a56d891e94b413c333d389e = L.circleMarker(
+                [23.4733, 78.6569],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.2626809, "stroke": true, "weight": 3}
+            ).addTo(map_05e90f3e46d49b26be6e88c57ce55c5c);
+        
+    
+        var popup_2ae7611efd4ae105148cf8c05dfcc460 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0fe40e0dbb1d57fb4a411ada668a7f03 = $(`<div id="html_0fe40e0dbb1d57fb4a411ada668a7f03" style="width: 100.0%; height: 100.0%;">5. Madhya Pradesh: 72,626,809</div>`)[0];
+                popup_2ae7611efd4ae105148cf8c05dfcc460.setContent(html_0fe40e0dbb1d57fb4a411ada668a7f03);
+            
+        
+
+        circle_marker_9baf71198a56d891e94b413c333d389e.bindPopup(popup_2ae7611efd4ae105148cf8c05dfcc460)
+        ;
+
+        
+    
+    
+            var marker_eeab6f9acf58a83cd053dd16a1ec13d7 = L.marker(
+                [23.4733, 78.6569],
+                {
+}
+            ).addTo(map_05e90f3e46d49b26be6e88c57ce55c5c);
+        
+    
+            var div_icon_bbd345dbd73b39ac6227639bc04ddf29 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: black; padding: 2px; border-radius: 3px;\"\u003e5\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_eeab6f9acf58a83cd053dd16a1ec13d7.setIcon(div_icon_bbd345dbd73b39ac6227639bc04ddf29);
+        
+    
+                marker_eeab6f9acf58a83cd053dd16a1ec13d7.setIcon(div_icon_bbd345dbd73b39ac6227639bc04ddf29);
+            
+    
+            var circle_marker_a6c0272a09f0f362a3ff48d6bafe4fb5 = L.circleMarker(
+                [11.1271, 78.6569],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.214703, "stroke": true, "weight": 3}
+            ).addTo(map_05e90f3e46d49b26be6e88c57ce55c5c);
+        
+    
+        var popup_d53e2f8c3be3200620ac24e360acb3f1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a3556b570bfb61892d6bfab6341f2c4d = $(`<div id="html_a3556b570bfb61892d6bfab6341f2c4d" style="width: 100.0%; height: 100.0%;">6. Tamil Nadu: 72,147,030</div>`)[0];
+                popup_d53e2f8c3be3200620ac24e360acb3f1.setContent(html_a3556b570bfb61892d6bfab6341f2c4d);
+            
+        
+
+        circle_marker_a6c0272a09f0f362a3ff48d6bafe4fb5.bindPopup(popup_d53e2f8c3be3200620ac24e360acb3f1)
+        ;
+
+        
+    
+    
+            var marker_413fe03c5c7752bf9a37437cb6aa85ad = L.marker(
+                [11.1271, 78.6569],
+                {
+}
+            ).addTo(map_05e90f3e46d49b26be6e88c57ce55c5c);
+        
+    
+            var div_icon_ee89374f1b4175c28c48936c80869d0e = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: black; padding: 2px; border-radius: 3px;\"\u003e6\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_413fe03c5c7752bf9a37437cb6aa85ad.setIcon(div_icon_ee89374f1b4175c28c48936c80869d0e);
+        
+    
+                marker_413fe03c5c7752bf9a37437cb6aa85ad.setIcon(div_icon_ee89374f1b4175c28c48936c80869d0e);
+            
+    
+            var circle_marker_5a51b028ae049973a301da89bc479df6 = L.circleMarker(
+                [27.0238, 74.2179],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.8548437, "stroke": true, "weight": 3}
+            ).addTo(map_05e90f3e46d49b26be6e88c57ce55c5c);
+        
+    
+        var popup_bb684a07aa58a038eb0ea4d24e5d50e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cbe0b49bb6ed025b75afccf273ad38d8 = $(`<div id="html_cbe0b49bb6ed025b75afccf273ad38d8" style="width: 100.0%; height: 100.0%;">7. Rajasthan: 68,548,437</div>`)[0];
+                popup_bb684a07aa58a038eb0ea4d24e5d50e0.setContent(html_cbe0b49bb6ed025b75afccf273ad38d8);
+            
+        
+
+        circle_marker_5a51b028ae049973a301da89bc479df6.bindPopup(popup_bb684a07aa58a038eb0ea4d24e5d50e0)
+        ;
+
+        
+    
+    
+            var marker_c464a5b4ef65474b45112f20cc08e6b4 = L.marker(
+                [27.0238, 74.2179],
+                {
+}
+            ).addTo(map_05e90f3e46d49b26be6e88c57ce55c5c);
+        
+    
+            var div_icon_3af282fdf10044e049a006430c716aac = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: black; padding: 2px; border-radius: 3px;\"\u003e7\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_c464a5b4ef65474b45112f20cc08e6b4.setIcon(div_icon_3af282fdf10044e049a006430c716aac);
+        
+    
+                marker_c464a5b4ef65474b45112f20cc08e6b4.setIcon(div_icon_3af282fdf10044e049a006430c716aac);
+            
+    
+            var circle_marker_a9065c400e1d758aab065f1210e41eeb = L.circleMarker(
+                [15.3173, 75.7139],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.1095297, "stroke": true, "weight": 3}
+            ).addTo(map_05e90f3e46d49b26be6e88c57ce55c5c);
+        
+    
+        var popup_e3aff8f15e728ded0c2b63c45726963d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0cc89fe6cbc0f7fc9a8920e4a0d21c37 = $(`<div id="html_0cc89fe6cbc0f7fc9a8920e4a0d21c37" style="width: 100.0%; height: 100.0%;">8. Karnataka: 61,095,297</div>`)[0];
+                popup_e3aff8f15e728ded0c2b63c45726963d.setContent(html_0cc89fe6cbc0f7fc9a8920e4a0d21c37);
+            
+        
+
+        circle_marker_a9065c400e1d758aab065f1210e41eeb.bindPopup(popup_e3aff8f15e728ded0c2b63c45726963d)
+        ;
+
+        
+    
+    
+            var marker_b041bd894af919634f02638fdec42442 = L.marker(
+                [15.3173, 75.7139],
+                {
+}
+            ).addTo(map_05e90f3e46d49b26be6e88c57ce55c5c);
+        
+    
+            var div_icon_c292a909a5369a67051e934f1d92d10e = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: black; padding: 2px; border-radius: 3px;\"\u003e8\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_b041bd894af919634f02638fdec42442.setIcon(div_icon_c292a909a5369a67051e934f1d92d10e);
+        
+    
+                marker_b041bd894af919634f02638fdec42442.setIcon(div_icon_c292a909a5369a67051e934f1d92d10e);
+            
+    
+            var circle_marker_957d7078ee0f1da77b66250eb4189b6a = L.circleMarker(
+                [22.2587, 71.1924],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.0439692, "stroke": true, "weight": 3}
+            ).addTo(map_05e90f3e46d49b26be6e88c57ce55c5c);
+        
+    
+        var popup_062a35d791bfd71c629e700bcf1d979e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_16076f1b6d294803a775ada334fbeb60 = $(`<div id="html_16076f1b6d294803a775ada334fbeb60" style="width: 100.0%; height: 100.0%;">9. Gujarat: 60,439,692</div>`)[0];
+                popup_062a35d791bfd71c629e700bcf1d979e.setContent(html_16076f1b6d294803a775ada334fbeb60);
+            
+        
+
+        circle_marker_957d7078ee0f1da77b66250eb4189b6a.bindPopup(popup_062a35d791bfd71c629e700bcf1d979e)
+        ;
+
+        
+    
+    
+            var marker_4cbb98be6d32ea4fe74d001b67a19253 = L.marker(
+                [22.2587, 71.1924],
+                {
+}
+            ).addTo(map_05e90f3e46d49b26be6e88c57ce55c5c);
+        
+    
+            var div_icon_b66b737e732cdb59ace94d4f2388fcd2 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: black; padding: 2px; border-radius: 3px;\"\u003e9\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_4cbb98be6d32ea4fe74d001b67a19253.setIcon(div_icon_b66b737e732cdb59ace94d4f2388fcd2);
+        
+    
+                marker_4cbb98be6d32ea4fe74d001b67a19253.setIcon(div_icon_b66b737e732cdb59ace94d4f2388fcd2);
+            
+    
+            var circle_marker_5e754554de7a62f7af310a9ea159a0ef = L.circleMarker(
+                [15.9129, 79.74],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.957710299999999, "stroke": true, "weight": 3}
+            ).addTo(map_05e90f3e46d49b26be6e88c57ce55c5c);
+        
+    
+        var popup_ac5407c81862da710fb42f28ba21e183 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_908478273d934e0a51caa00a7d61b736 = $(`<div id="html_908478273d934e0a51caa00a7d61b736" style="width: 100.0%; height: 100.0%;">10. Andhra Pradesh: 49,577,103</div>`)[0];
+                popup_ac5407c81862da710fb42f28ba21e183.setContent(html_908478273d934e0a51caa00a7d61b736);
+            
+        
+
+        circle_marker_5e754554de7a62f7af310a9ea159a0ef.bindPopup(popup_ac5407c81862da710fb42f28ba21e183)
+        ;
+
+        
+    
+    
+            var marker_174474060a05856287877501cfd17022 = L.marker(
+                [15.9129, 79.74],
+                {
+}
+            ).addTo(map_05e90f3e46d49b26be6e88c57ce55c5c);
+        
+    
+            var div_icon_ad6c95ed72fd4313e269912955f36e58 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: black; padding: 2px; border-radius: 3px;\"\u003e10\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_174474060a05856287877501cfd17022.setIcon(div_icon_ad6c95ed72fd4313e269912955f36e58);
+        
+    
+                marker_174474060a05856287877501cfd17022.setIcon(div_icon_ad6c95ed72fd4313e269912955f36e58);
+            
+</script>
+</html>

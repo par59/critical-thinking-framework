@@ -1,0 +1,23 @@
+// Agile Framework Flowchart
+digraph {
+	A [label="Product Backlog"]
+	B [label="Backlog Grooming
+(Refinement)"]
+	C [label="Sprint Planning"]
+	D [label="Sprint Execution
+(Development, Testing)"]
+	E [label="Daily Standups"]
+	F [label="Sprint Review
+(Demo)"]
+	G [label="Sprint Retrospective"]
+	H [label="Increment
+(Working Software)"]
+	A -> B
+	B -> C
+	C -> D
+	D -> E [label="Daily Updates"]
+	D -> F
+	F -> G
+	G -> A [label="Feedback Loop"]
+	F -> H [label=Deliverable]
+}

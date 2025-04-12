@@ -1,0 +1,27 @@
+// Agile Framework Flowchart
+digraph {
+	dpi=300 rankdir=LR size=10
+	A [label="Product Backlog" color=lightblue fontname=Arial fontsize=12 shape=box style="rounded,filled"]
+	B [label="Backlog Grooming
+(Refinement & Estimation)" color=lightblue fontname=Arial fontsize=12 shape=box style="rounded,filled"]
+	C [label="Sprint Planning
+(Goal & Commitment)" color=lightblue fontname=Arial fontsize=12 shape=box style="rounded,filled"]
+	D [label="Sprint Execution
+(Coding, Testing, Integration)" color=lightblue fontname=Arial fontsize=12 shape=box style="rounded,filled"]
+	E [label="Daily Stand-ups
+(What, What Next, Blockers)" color=lightblue fontname=Arial fontsize=12 shape=box style="rounded,filled"]
+	F [label="Sprint Review
+(Demo to Stakeholders)" color=lightblue fontname=Arial fontsize=12 shape=box style="rounded,filled"]
+	G [label="Sprint Retrospective
+(Process Improvement)" color=lightblue fontname=Arial fontsize=12 shape=box style="rounded,filled"]
+	H [label="Increment
+(Shippable Product)" color=lightblue fontname=Arial fontsize=12 shape=box style="rounded,filled"]
+	A -> B [label=Refine]
+	B -> C [label=Plan]
+	C -> D [label="Start Sprint"]
+	D -> E [label="Daily Sync" style=dashed]
+	D -> F [label="Complete Work"]
+	F -> H [label=Delivery]
+	F -> G [label=Inspect]
+	G -> A [label="Feedback Loop" color=gray]
+}

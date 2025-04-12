@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8f819be7058dd9756825077ffcf9535e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8f819be7058dd9756825077ffcf9535e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8f819be7058dd9756825077ffcf9535e = L.map(
+                "map_8f819be7058dd9756825077ffcf9535e",
+                {
+                    center: [28.6139, 77.209],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d021345c19147d655532a95cc10c8a2d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d021345c19147d655532a95cc10c8a2d.addTo(map_8f819be7058dd9756825077ffcf9535e);
+        
+    
+            var marker_20efe96368f051ca4cdd01a96cc540b7 = L.marker(
+                [28.6562, 77.241],
+                {
+}
+            ).addTo(map_8f819be7058dd9756825077ffcf9535e);
+        
+    
+            var icon_e8917e012e7614d1ed8881120286b3f7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "glyphicon-map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9251de88fb098f062c7f97cb4ca7cd57 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_89096b52d06d71b231eb53470fb6ff6f = $(`<div id="html_89096b52d06d71b231eb53470fb6ff6f" style="width: 100.0%; height: 100.0%;"><b>Red Fort</b><br>Lal Qila, Chandni Chowk</div>`)[0];
+                popup_9251de88fb098f062c7f97cb4ca7cd57.setContent(html_89096b52d06d71b231eb53470fb6ff6f);
+            
+        
+
+        marker_20efe96368f051ca4cdd01a96cc540b7.bindPopup(popup_9251de88fb098f062c7f97cb4ca7cd57)
+        ;
+
+        
+    
+    
+            marker_20efe96368f051ca4cdd01a96cc540b7.bindTooltip(
+                `<div>
+                     Red Fort - Lal Qila, Chandni Chowk
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_20efe96368f051ca4cdd01a96cc540b7.setIcon(icon_e8917e012e7614d1ed8881120286b3f7);
+            
+    
+            var marker_916facc78b274ed8aee4c92333bf9fbb = L.marker(
+                [28.6562, 77.241],
+                {
+}
+            ).addTo(map_8f819be7058dd9756825077ffcf9535e);
+        
+    
+            var div_icon_221bf8a227cc7ffc091744b2fadf6c76 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    font-size: 14px;\n                    color: black;\n                    background-color: white;\n                    padding: 4px 8px;\n                    border-radius: 8px;\n                    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);\n                    font-weight: bold;\n                    text-align: center;\n                    \"\u003e\n                    Red Fort\n                \u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_916facc78b274ed8aee4c92333bf9fbb.setIcon(div_icon_221bf8a227cc7ffc091744b2fadf6c76);
+        
+    
+                marker_916facc78b274ed8aee4c92333bf9fbb.setIcon(div_icon_221bf8a227cc7ffc091744b2fadf6c76);
+            
+    
+            var marker_34fa1ed8f720367c1d3a23bdad504e79 = L.marker(
+                [28.5244, 77.1855],
+                {
+}
+            ).addTo(map_8f819be7058dd9756825077ffcf9535e);
+        
+    
+            var icon_e32c557f7ca2fe39750efefdce60062e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "glyphicon-map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8d928e9373aaf3b4011077951bfeb44d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_06b5870b40a31de84d94f3973c6e6ffe = $(`<div id="html_06b5870b40a31de84d94f3973c6e6ffe" style="width: 100.0%; height: 100.0%;"><b>Qutub Minar</b><br>Mehrauli</div>`)[0];
+                popup_8d928e9373aaf3b4011077951bfeb44d.setContent(html_06b5870b40a31de84d94f3973c6e6ffe);
+            
+        
+
+        marker_34fa1ed8f720367c1d3a23bdad504e79.bindPopup(popup_8d928e9373aaf3b4011077951bfeb44d)
+        ;
+
+        
+    
+    
+            marker_34fa1ed8f720367c1d3a23bdad504e79.bindTooltip(
+                `<div>
+                     Qutub Minar - Mehrauli
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_34fa1ed8f720367c1d3a23bdad504e79.setIcon(icon_e32c557f7ca2fe39750efefdce60062e);
+            
+    
+            var marker_effefece9156bd8c950c1ac5ba4e471f = L.marker(
+                [28.5244, 77.1855],
+                {
+}
+            ).addTo(map_8f819be7058dd9756825077ffcf9535e);
+        
+    
+            var div_icon_3b1cfcfc4d63f4b2039c05a41dcfa5d1 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    font-size: 14px;\n                    color: black;\n                    background-color: white;\n                    padding: 4px 8px;\n                    border-radius: 8px;\n                    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);\n                    font-weight: bold;\n                    text-align: center;\n                    \"\u003e\n                    Qutub Minar\n                \u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_effefece9156bd8c950c1ac5ba4e471f.setIcon(div_icon_3b1cfcfc4d63f4b2039c05a41dcfa5d1);
+        
+    
+                marker_effefece9156bd8c950c1ac5ba4e471f.setIcon(div_icon_3b1cfcfc4d63f4b2039c05a41dcfa5d1);
+            
+    
+            var marker_9e544e563893c51ccb1d93a553a449ab = L.marker(
+                [28.6129, 77.2295],
+                {
+}
+            ).addTo(map_8f819be7058dd9756825077ffcf9535e);
+        
+    
+            var icon_b6f04eaaf0e4aaf34b768d6eabf8f923 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "glyphicon-map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ef98a90bd23091cc5e15a8f7cc7a225b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef1d71b253316de1cfc5b625878c50af = $(`<div id="html_ef1d71b253316de1cfc5b625878c50af" style="width: 100.0%; height: 100.0%;"><b>India Gate</b><br>Rajpath</div>`)[0];
+                popup_ef98a90bd23091cc5e15a8f7cc7a225b.setContent(html_ef1d71b253316de1cfc5b625878c50af);
+            
+        
+
+        marker_9e544e563893c51ccb1d93a553a449ab.bindPopup(popup_ef98a90bd23091cc5e15a8f7cc7a225b)
+        ;
+
+        
+    
+    
+            marker_9e544e563893c51ccb1d93a553a449ab.bindTooltip(
+                `<div>
+                     India Gate - Rajpath
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9e544e563893c51ccb1d93a553a449ab.setIcon(icon_b6f04eaaf0e4aaf34b768d6eabf8f923);
+            
+    
+            var marker_7393a55c50cfbfe19d9ff4bfc4795e51 = L.marker(
+                [28.6129, 77.2295],
+                {
+}
+            ).addTo(map_8f819be7058dd9756825077ffcf9535e);
+        
+    
+            var div_icon_634934083b5869df23117e3bc7344aec = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    font-size: 14px;\n                    color: black;\n                    background-color: white;\n                    padding: 4px 8px;\n                    border-radius: 8px;\n                    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);\n                    font-weight: bold;\n                    text-align: center;\n                    \"\u003e\n                    India Gate\n                \u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_7393a55c50cfbfe19d9ff4bfc4795e51.setIcon(div_icon_634934083b5869df23117e3bc7344aec);
+        
+    
+                marker_7393a55c50cfbfe19d9ff4bfc4795e51.setIcon(div_icon_634934083b5869df23117e3bc7344aec);
+            
+    
+            var marker_beb59e8aee518b18240cde0dd1d5b2d4 = L.marker(
+                [28.5933, 77.2507],
+                {
+}
+            ).addTo(map_8f819be7058dd9756825077ffcf9535e);
+        
+    
+            var icon_588ee91e031b8686837b253de4b199b7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "glyphicon-map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9d249ffc1c3430624e7c6d191a7c1f42 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c823f67680209e2fb949f6a059f05189 = $(`<div id="html_c823f67680209e2fb949f6a059f05189" style="width: 100.0%; height: 100.0%;"><b>Humayun's Tomb</b><br>Nizamuddin East</div>`)[0];
+                popup_9d249ffc1c3430624e7c6d191a7c1f42.setContent(html_c823f67680209e2fb949f6a059f05189);
+            
+        
+
+        marker_beb59e8aee518b18240cde0dd1d5b2d4.bindPopup(popup_9d249ffc1c3430624e7c6d191a7c1f42)
+        ;
+
+        
+    
+    
+            marker_beb59e8aee518b18240cde0dd1d5b2d4.bindTooltip(
+                `<div>
+                     Humayun's Tomb - Nizamuddin East
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_beb59e8aee518b18240cde0dd1d5b2d4.setIcon(icon_588ee91e031b8686837b253de4b199b7);
+            
+    
+            var marker_b85eca07d6dab270b1d7d5a843644674 = L.marker(
+                [28.5933, 77.2507],
+                {
+}
+            ).addTo(map_8f819be7058dd9756825077ffcf9535e);
+        
+    
+            var div_icon_ed3c36fe0314f6a71cffd71a46acb9e0 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    font-size: 14px;\n                    color: black;\n                    background-color: white;\n                    padding: 4px 8px;\n                    border-radius: 8px;\n                    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);\n                    font-weight: bold;\n                    text-align: center;\n                    \"\u003e\n                    Humayun\u0027s Tomb\n                \u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_b85eca07d6dab270b1d7d5a843644674.setIcon(div_icon_ed3c36fe0314f6a71cffd71a46acb9e0);
+        
+    
+                marker_b85eca07d6dab270b1d7d5a843644674.setIcon(div_icon_ed3c36fe0314f6a71cffd71a46acb9e0);
+            
+    
+            var marker_f4cb68135e7ab5a77ee28e12ab295821 = L.marker(
+                [28.6507, 77.2334],
+                {
+}
+            ).addTo(map_8f819be7058dd9756825077ffcf9535e);
+        
+    
+            var icon_37a0c444b66e3a0ee8cdda358c5373bc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "glyphicon-map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5fef973be16cf731bab7b178a2d4ee36 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0516e972c0c4e19f378df497975eb330 = $(`<div id="html_0516e972c0c4e19f378df497975eb330" style="width: 100.0%; height: 100.0%;"><b>Jama Masjid</b><br>Old Delhi</div>`)[0];
+                popup_5fef973be16cf731bab7b178a2d4ee36.setContent(html_0516e972c0c4e19f378df497975eb330);
+            
+        
+
+        marker_f4cb68135e7ab5a77ee28e12ab295821.bindPopup(popup_5fef973be16cf731bab7b178a2d4ee36)
+        ;
+
+        
+    
+    
+            marker_f4cb68135e7ab5a77ee28e12ab295821.bindTooltip(
+                `<div>
+                     Jama Masjid - Old Delhi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f4cb68135e7ab5a77ee28e12ab295821.setIcon(icon_37a0c444b66e3a0ee8cdda358c5373bc);
+            
+    
+            var marker_5f25b98b7f38294db2ea3f1a53f45757 = L.marker(
+                [28.6507, 77.2334],
+                {
+}
+            ).addTo(map_8f819be7058dd9756825077ffcf9535e);
+        
+    
+            var div_icon_2c418958fc20a2d68a2a25271da6cf22 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    font-size: 14px;\n                    color: black;\n                    background-color: white;\n                    padding: 4px 8px;\n                    border-radius: 8px;\n                    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);\n                    font-weight: bold;\n                    text-align: center;\n                    \"\u003e\n                    Jama Masjid\n                \u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_5f25b98b7f38294db2ea3f1a53f45757.setIcon(div_icon_2c418958fc20a2d68a2a25271da6cf22);
+        
+    
+                marker_5f25b98b7f38294db2ea3f1a53f45757.setIcon(div_icon_2c418958fc20a2d68a2a25271da6cf22);
+            
+    
+            var marker_274684b8571aa948bf0c799abbcdecf1 = L.marker(
+                [28.5535, 77.2588],
+                {
+}
+            ).addTo(map_8f819be7058dd9756825077ffcf9535e);
+        
+    
+            var icon_8db04ce7e17830f6cc9cda8e3bc4d781 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "glyphicon-map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_33e964839a08e8c4583ab7f1f747bf24 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b440dd489c195752187ede2db83f1f69 = $(`<div id="html_b440dd489c195752187ede2db83f1f69" style="width: 100.0%; height: 100.0%;"><b>Lotus Temple</b><br>Kalkaji</div>`)[0];
+                popup_33e964839a08e8c4583ab7f1f747bf24.setContent(html_b440dd489c195752187ede2db83f1f69);
+            
+        
+
+        marker_274684b8571aa948bf0c799abbcdecf1.bindPopup(popup_33e964839a08e8c4583ab7f1f747bf24)
+        ;
+
+        
+    
+    
+            marker_274684b8571aa948bf0c799abbcdecf1.bindTooltip(
+                `<div>
+                     Lotus Temple - Kalkaji
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_274684b8571aa948bf0c799abbcdecf1.setIcon(icon_8db04ce7e17830f6cc9cda8e3bc4d781);
+            
+    
+            var marker_d563ce62591f45782f7491d18b5000e8 = L.marker(
+                [28.5535, 77.2588],
+                {
+}
+            ).addTo(map_8f819be7058dd9756825077ffcf9535e);
+        
+    
+            var div_icon_d1c203b95100792548af1c3f9595f030 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    font-size: 14px;\n                    color: black;\n                    background-color: white;\n                    padding: 4px 8px;\n                    border-radius: 8px;\n                    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);\n                    font-weight: bold;\n                    text-align: center;\n                    \"\u003e\n                    Lotus Temple\n                \u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_d563ce62591f45782f7491d18b5000e8.setIcon(div_icon_d1c203b95100792548af1c3f9595f030);
+        
+    
+                marker_d563ce62591f45782f7491d18b5000e8.setIcon(div_icon_d1c203b95100792548af1c3f9595f030);
+            
+    
+            var marker_10459ca4d2e910fe565d58afd1366e0c = L.marker(
+                [28.6143, 77.199],
+                {
+}
+            ).addTo(map_8f819be7058dd9756825077ffcf9535e);
+        
+    
+            var icon_0a3ca33e97d8f0e9724cd88367198d85 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "glyphicon-map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_373cffb612de1ed66ea9e78e76fae8f7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_de2f37610dad0ffc8e25e80752c898ec = $(`<div id="html_de2f37610dad0ffc8e25e80752c898ec" style="width: 100.0%; height: 100.0%;"><b>Rashtrapati Bhavan</b><br>President’s Estate</div>`)[0];
+                popup_373cffb612de1ed66ea9e78e76fae8f7.setContent(html_de2f37610dad0ffc8e25e80752c898ec);
+            
+        
+
+        marker_10459ca4d2e910fe565d58afd1366e0c.bindPopup(popup_373cffb612de1ed66ea9e78e76fae8f7)
+        ;
+
+        
+    
+    
+            marker_10459ca4d2e910fe565d58afd1366e0c.bindTooltip(
+                `<div>
+                     Rashtrapati Bhavan - President’s Estate
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_10459ca4d2e910fe565d58afd1366e0c.setIcon(icon_0a3ca33e97d8f0e9724cd88367198d85);
+            
+    
+            var marker_e1fc355964d5465eb2f44b317506eda7 = L.marker(
+                [28.6143, 77.199],
+                {
+}
+            ).addTo(map_8f819be7058dd9756825077ffcf9535e);
+        
+    
+            var div_icon_082601959c3aefaa3132ed94d5895475 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    font-size: 14px;\n                    color: black;\n                    background-color: white;\n                    padding: 4px 8px;\n                    border-radius: 8px;\n                    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);\n                    font-weight: bold;\n                    text-align: center;\n                    \"\u003e\n                    Rashtrapati Bhavan\n                \u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_e1fc355964d5465eb2f44b317506eda7.setIcon(div_icon_082601959c3aefaa3132ed94d5895475);
+        
+    
+                marker_e1fc355964d5465eb2f44b317506eda7.setIcon(div_icon_082601959c3aefaa3132ed94d5895475);
+            
+    
+            var marker_508cfff1bb2f83e49bea2e0e463a085c = L.marker(
+                [28.64, 77.2506],
+                {
+}
+            ).addTo(map_8f819be7058dd9756825077ffcf9535e);
+        
+    
+            var icon_8a2065074cd99c810408edff7ca54428 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "glyphicon-map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fe75fdfbe9edd170d9d93295a9d9e3dc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e4df2033f3d5ecca46af15bd97014d8b = $(`<div id="html_e4df2033f3d5ecca46af15bd97014d8b" style="width: 100.0%; height: 100.0%;"><b>Raj Ghat</b><br>Ring Road</div>`)[0];
+                popup_fe75fdfbe9edd170d9d93295a9d9e3dc.setContent(html_e4df2033f3d5ecca46af15bd97014d8b);
+            
+        
+
+        marker_508cfff1bb2f83e49bea2e0e463a085c.bindPopup(popup_fe75fdfbe9edd170d9d93295a9d9e3dc)
+        ;
+
+        
+    
+    
+            marker_508cfff1bb2f83e49bea2e0e463a085c.bindTooltip(
+                `<div>
+                     Raj Ghat - Ring Road
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_508cfff1bb2f83e49bea2e0e463a085c.setIcon(icon_8a2065074cd99c810408edff7ca54428);
+            
+    
+            var marker_26706fb070d7777a00bb6a55334daa00 = L.marker(
+                [28.64, 77.2506],
+                {
+}
+            ).addTo(map_8f819be7058dd9756825077ffcf9535e);
+        
+    
+            var div_icon_b6404b294723b19f0904bb69064fdb0d = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    font-size: 14px;\n                    color: black;\n                    background-color: white;\n                    padding: 4px 8px;\n                    border-radius: 8px;\n                    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);\n                    font-weight: bold;\n                    text-align: center;\n                    \"\u003e\n                    Raj Ghat\n                \u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_26706fb070d7777a00bb6a55334daa00.setIcon(div_icon_b6404b294723b19f0904bb69064fdb0d);
+        
+    
+                marker_26706fb070d7777a00bb6a55334daa00.setIcon(div_icon_b6404b294723b19f0904bb69064fdb0d);
+            
+    
+            var marker_b259e482f24ace25f763d3b390f0f34a = L.marker(
+                [28.6272, 77.2166],
+                {
+}
+            ).addTo(map_8f819be7058dd9756825077ffcf9535e);
+        
+    
+            var icon_15590e9bfdeee1bacb69db4ee40fae45 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "glyphicon-map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7e4c32de413ae21f764d64598589edd1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1fdbb42bb454676e035f97c2fcd5e839 = $(`<div id="html_1fdbb42bb454676e035f97c2fcd5e839" style="width: 100.0%; height: 100.0%;"><b>Jantar Mantar</b><br>Connaught Place</div>`)[0];
+                popup_7e4c32de413ae21f764d64598589edd1.setContent(html_1fdbb42bb454676e035f97c2fcd5e839);
+            
+        
+
+        marker_b259e482f24ace25f763d3b390f0f34a.bindPopup(popup_7e4c32de413ae21f764d64598589edd1)
+        ;
+
+        
+    
+    
+            marker_b259e482f24ace25f763d3b390f0f34a.bindTooltip(
+                `<div>
+                     Jantar Mantar - Connaught Place
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b259e482f24ace25f763d3b390f0f34a.setIcon(icon_15590e9bfdeee1bacb69db4ee40fae45);
+            
+    
+            var marker_b84e2c28da0e71bcc3314e8010716497 = L.marker(
+                [28.6272, 77.2166],
+                {
+}
+            ).addTo(map_8f819be7058dd9756825077ffcf9535e);
+        
+    
+            var div_icon_98bb0204ea2e358c161f999fe0382461 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    font-size: 14px;\n                    color: black;\n                    background-color: white;\n                    padding: 4px 8px;\n                    border-radius: 8px;\n                    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);\n                    font-weight: bold;\n                    text-align: center;\n                    \"\u003e\n                    Jantar Mantar\n                \u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_b84e2c28da0e71bcc3314e8010716497.setIcon(div_icon_98bb0204ea2e358c161f999fe0382461);
+        
+    
+                marker_b84e2c28da0e71bcc3314e8010716497.setIcon(div_icon_98bb0204ea2e358c161f999fe0382461);
+            
+    
+            var marker_39b4c9e307ebb2138fbf461e1a7329aa = L.marker(
+                [28.6096, 77.2431],
+                {
+}
+            ).addTo(map_8f819be7058dd9756825077ffcf9535e);
+        
+    
+            var icon_2b89976afae26481bee452191e57719c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "glyphicon-map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5daf7c8e50709bb35c9132dcab2874ea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9c4c43c2e59f0eb7db474d31840563c5 = $(`<div id="html_9c4c43c2e59f0eb7db474d31840563c5" style="width: 100.0%; height: 100.0%;"><b>Purana Qila</b><br>Mathura Road</div>`)[0];
+                popup_5daf7c8e50709bb35c9132dcab2874ea.setContent(html_9c4c43c2e59f0eb7db474d31840563c5);
+            
+        
+
+        marker_39b4c9e307ebb2138fbf461e1a7329aa.bindPopup(popup_5daf7c8e50709bb35c9132dcab2874ea)
+        ;
+
+        
+    
+    
+            marker_39b4c9e307ebb2138fbf461e1a7329aa.bindTooltip(
+                `<div>
+                     Purana Qila - Mathura Road
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_39b4c9e307ebb2138fbf461e1a7329aa.setIcon(icon_2b89976afae26481bee452191e57719c);
+            
+    
+            var marker_732cd59407e276620f8505a14decab96 = L.marker(
+                [28.6096, 77.2431],
+                {
+}
+            ).addTo(map_8f819be7058dd9756825077ffcf9535e);
+        
+    
+            var div_icon_d421ad370d478bad81062dd756fb63c2 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    font-size: 14px;\n                    color: black;\n                    background-color: white;\n                    padding: 4px 8px;\n                    border-radius: 8px;\n                    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);\n                    font-weight: bold;\n                    text-align: center;\n                    \"\u003e\n                    Purana Qila\n                \u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_732cd59407e276620f8505a14decab96.setIcon(div_icon_d421ad370d478bad81062dd756fb63c2);
+        
+    
+                marker_732cd59407e276620f8505a14decab96.setIcon(div_icon_d421ad370d478bad81062dd756fb63c2);
+            
+</script>
+</html>

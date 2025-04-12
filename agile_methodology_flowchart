@@ -1,0 +1,19 @@
+// Agile Methodology Flowchart
+digraph {
+	P [label="Product Backlog"]
+	S [label="Sprint Planning"]
+	I [label="Sprint Backlog"]
+	D [label="Daily Scrum"]
+	W [label="Working Increment"]
+	R [label="Sprint Review"]
+	RE [label="Sprint Retrospective"]
+	SH [label="Shippable Product"]
+	P -> S
+	S -> I
+	I -> D
+	D -> W
+	W -> R
+	R -> RE
+	RE -> I
+	W -> SH [label="Completed Features"]
+}
